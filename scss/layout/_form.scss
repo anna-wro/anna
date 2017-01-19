@@ -1,0 +1,68 @@
+#contact {
+    margin: 1.5em auto 2em;
+    padding: 3em 4em 8em;
+    background-color: $gray-1;
+    text-align: center;
+    position: relative;
+    &:after {
+        content: "";
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        right: -32px;
+        bottom: -32px;
+        border: 14px solid $cyan;
+        z-index: -1;
+    }
+}
+
+form {
+    max-width: 600px;
+    font-size: 1.125em;
+}
+
+input:invalid {
+    box-shadow: none;
+    border: none;
+    border-bottom: 8px solid $pink;
+}
+
+textarea,
+input {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-bottom: 8px solid $gray;
+    background-color: $gray;
+    &:focus {
+        border-bottom: 8px solid $violet;
+        outline: none;
+    }
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+#form-messages {
+    padding: .5em 1em .75em 1em;
+    margin-bottom: 0.75rem;
+    border-radius: 2px;
+    font-size: 1.23em;
+}
+
+.success {
+    border: none;
+    color: $violet;
+    border-bottom: 8px solid $violet;
+}
+
+.error {
+    border: none;
+    color: #E53935;
+    border-bottom: 8px solid #E53935;
+}

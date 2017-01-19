@@ -1,0 +1,67 @@
+#portfolio {
+    margin-top: 0;
+    padding-top: 3em;
+}
+
+.project {
+    padding: 1em 0 0 3em;
+}
+
+.img-portfolio:hover {
+    box-shadow: 7px 10px 20px rgba(0, 0, 0, .3);
+}
+
+.used li {
+    display: block;
+    padding-left: 3em;
+    font-size: 1.125em;
+    font-weight: 600;
+    color: #787787;
+}
+
+hr {
+    width: 4em;
+    float: left;
+    position: relative;
+    top: 18px;
+    border: 0px solid $gray-1;
+    border-top: 3px solid $gray-1;
+}
+
+.violet {
+    border-top: 3px solid $electric-violet;
+}
+
+figure {
+    margin: 4em 0 0;
+}
+
+.starnight:before {
+    content: url('#{$path-patterns}/pattern.svg');
+    overflow: hidden;
+    position: absolute;
+    top: -22px;
+    left: -25px;
+    width: 80%;
+    z-index: -1;
+}
+
+.apollo,
+.starnight {
+    position: relative;
+}
+
+.apollo:before {
+    overflow: hidden;
+    content: url('#{$path-patterns}/violet-dots.svg');
+    z-index: -1;
+    position: absolute;
+    right: -23px;
+    bottom: -25px;
+    width: 100px;
+}
+
+#portfolio+ p {
+    font-weight: 300;
+    margin-top: 50px;
+}

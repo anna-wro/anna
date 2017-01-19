@@ -1,0 +1,32 @@
+.banner-circle:first-child {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    height: 34px;
+    width: 34px;
+    opacity: .5;
+}
+
+.banner-circle:nth-child(2) {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    height: 38px;
+    width: 38px;
+}
+
+.banner-shape {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    width: 59px;
+    height: 45px;
+}
+
+.banner-triangle {
+    width: 33px;
+    height: 27px;
+    position: absolute;
+    right: 20%;
+    bottom: 25%;
+}

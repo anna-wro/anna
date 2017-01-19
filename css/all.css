@@ -1,0 +1,216 @@
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Banner
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Banner - button
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Banner - figures
+   ========================================================================== */
+
+.figures {
+    display: none;
+    z-index: 0;
+}
+
+
+
+/* ==========================================================================
+   About me
+   ========================================================================== */
+
+.selfie img {
+    width: 175px;
+    float: right;
+}
+
+
+/* ==========================================================================
+   Portfolio
+   ========================================================================== */
+
+#portfolio {
+    margin-top: 5em;
+    padding-top: 3em;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+}
+
+h3 {
+    font-size: 2.25em;
+    margin: 10px 0 0;
+}
+
+figure {
+    margin: 4em 0 0;
+}
+
+.img-portfolio,
+img {
+    max-width: 100%;
+}
+
+.img-portfolio:hover {
+    box-shadow: 7px 10px 20px rgba(0, 0, 0, .3);
+}
+
+.col-5 {
+    position: relative;
+}
+
+.starnight:before {
+    content: url(../img/pattern.svg);
+    overflow: hidden;
+    position: absolute;
+    top: -22px;
+    left: -25px;
+    width: 80%;
+    z-index: -1;
+}
+
+.apollo,
+.starnight {
+    position: relative;
+}
+
+.project {
+    padding: 1em 0 0 3em;
+}
+
+hr {
+    width: 4em;
+    border-top: 3px solid #e2e2e2;
+    float: left;
+    position: relative;
+    top: 10px;
+}
+
+.violet {
+    border-top: 3px solid #4D07EB;
+}
+
+.tools li {
+    display: block;
+    padding-left: 3em;
+    font-size: 1.125em;
+    font-weight: 600;
+    color: #787787;
+}
+
+.apollo:before {
+    overflow: hidden;
+    content: url(../img/violet-dots.svg);
+    z-index: -1;
+    position: absolute;
+    right: -23px;
+    bottom: -25px;
+    width: 100px;
+}
+
+.icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin: 0 8px;
+    fill: #f5f5f5;
+    position: relative;
+    top: -1.6em;
+    right: 5px;
+}
+
+.github {
+    width: 20px;
+    height: 20px;
+    top: -3.25em;
+    right: -29px;
+}
+
+.icon-link {
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.icon-link:hover {
+    opacity: 1;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (min-width: 400px) {
+    .headline {
+        font-size: 4.75em;
+    }
+    .button {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 500px) {
+    .figures {
+        display: block;
+    }
+}
+
+@media (min-width: 750px) {
+    li,
+    .name {
+        display: inline-block;
+    }
+    nav {
+        float: right;
+    }
+    .name {
+        float: left;
+    }
+    .selfie:before {
+        content: url("../img/dots-blue.svg");
+        width: 130px;
+        position: absolute;
+        left: 18.5%;
+        bottom: -27px;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 960px) {
+    .col-6 {
+        width: 37.66%;
+    }
+    .col-6:first-child {
+        margin-left: 8.34%;
+        margin-right: 4%;
+    }
+    .col-6:nth-child(2) {
+        margin-right: 8.34%;
+        margin-left: 4%;
+    }
+}
+

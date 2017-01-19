@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;gFAEgF;AAEhF,UAAW;EACP,gBAAgB,EAAE,GAAG;;;AA2CzB,QAAS;EACL,OAAO,EAAE,KAAK;EACd,YAAY,EAAE,GAAG;EACjB,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,OAAO",
+"sources": ["file:///C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss"],
+"names": [],
+"file": "_portfolio.css"
+}

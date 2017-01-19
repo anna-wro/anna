@@ -1,0 +1,87 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+#about img {
+    max-width: 200px;
+    position: relative;
+    right: 35px;
+}
+
+.about-links {
+    margin-left: 10%;
+    float: right;
+}
+
+.about-img {
+    margin-bottom: 40px;
+    position: relative;
+    &:hover {
+        &:before {
+            border: 14px solid $violet;
+        }
+    }
+    &:before {
+        box-sizing: border-box;
+        content: "";
+        position: absolute;
+        bottom: -9px;
+        right: 8px;
+        border: 14px solid $cyan;
+        width: 200px;
+        height: 200px;
+        z-index: -1;
+        border-radius: 100px;
+        transition: .5s ease-out;
+    }
+}
+
+.about-img:hover:before {}
+
+.project-psd:hover {
+    color: $pink;
+}
+
+.about-list {
+    li {
+        position: relative;
+        display: block;
+        font-size: 1.25em;
+        font-weight: $font-weight-medium;
+        line-height: 1.3;
+        &:before {
+            color: $violet;
+            content: "•";
+            position: absolute;
+            top: -6px;
+            left: -10px;
+            font-size: 27px;
+            margin-left: -7px;
+        }
+    }
+}
+
+.cut-half {
+    columns: 2;
+    @media screen and (min-width: 480px) {
+        columns: 1;
+    }
+    @media screen and (min-width: 630px) {
+        columns: 2;
+    }
+}
+
+.cyan-link {
+    position: relative;
+    display: inline-block;
+    padding: 0 3px;
+    font-weight: bold;
+    & span {
+        top: 7px;
+    }
+    margin-bottom: 1em;
+}
+
+.dev {
+    margin-top: 1em;
+}

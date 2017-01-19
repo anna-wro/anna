@@ -1,0 +1,48 @@
+// .name {
+//     font-size: em(20px);
+//     font-weight: $font-weight-bold;
+//     /*    text-transform: uppercase;*/
+//     position: absolute;
+//     top: 1.7em;
+//     left: 127px;
+//     a {
+//         color: $gray-3;
+//         position: relative;
+//     }
+// }
+nav {
+    float: right;
+    margin-top: 1em;
+    position: relative;
+    a {
+        font-size: 1.25em;
+        margin-left: 10px;
+        padding: 5px;
+        position: relative;
+    }
+    ul {
+        margin-bottom: 14px;
+    }
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: $font-weight-bold;
+}
+
+a span {
+    position: absolute;
+    left: 0;
+    top: .675em;
+    width: 0;
+    height: 17px;
+    background: $cyan;
+    z-index: -1;
+    transition: .3s ease-in-out;
+}
+
+a:hover span {
+    width: 100%;
+}

@@ -1,0 +1,1886 @@
+@charset "UTF-8";
+/* line 8, C:/Users/Anna/Desktop/Portfolio/scss/helpers/_helpers.scss */
+header:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 10, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 24, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 40, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 62, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 78, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 89, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 103, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 112, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 126, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 145, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 155, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 165, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 175, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 184, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 192, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+sup {
+  top: -0.5em; }
+
+/* line 196, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 209, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 218, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 231, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 240, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 251, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 260, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 286, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 304, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 316, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 330, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 348, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 358, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 370, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 383, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 398, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 410, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 426, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 436, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 448, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 460, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 470, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 483, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 488, C:/Users/Anna/Desktop/Portfolio/scss/base/_reset.scss */
+td,
+th {
+  padding: 0; }
+
+@font-face {
+  font-family: "JaapokkiSubtract";
+  src: url("../fonts/jaapokkisubtract-regular.eot");
+  src: url("../fonts/jaapokkisubtract-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/jaapokkisubtract-regular.woff") format("woff"), url("../fonts/jaapokkisubtract-regular.ttf") format("truetype"), url("../fonts/jaapokkisubtract-regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "JaapokkiEnchance";
+  src: url("../fonts/jaapokkienchance-regular.eot");
+  src: url("../fonts/jaapokkienchance-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/jaapokkienchance-regular.woff") format("woff"), url("../fonts/jaapokkienchance-regular.ttf") format("truetype"), url("../fonts/jaapokkienchance-regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 23, C:/Users/Anna/Desktop/Portfolio/scss/base/_typography.scss */
+.enchance {
+  font-family: "JaapokkiEnchance", sans-serif; }
+
+/* line 27, C:/Users/Anna/Desktop/Portfolio/scss/base/_typography.scss */
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  position: relative; }
+
+/* line 35, C:/Users/Anna/Desktop/Portfolio/scss/base/_typography.scss */
+h3 {
+  font-size: 2.25em;
+  margin: 10px 0 0; }
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+/* line 5, C:/Users/Anna/Desktop/Portfolio/scss/base/_base.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 9, C:/Users/Anna/Desktop/Portfolio/scss/base/_base.scss */
+body {
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  color: #06032f; }
+
+/* line 16, C:/Users/Anna/Desktop/Portfolio/scss/base/_base.scss */
+a {
+  text-decoration: none;
+  color: #06032f;
+  outline: 0; }
+
+/* line 22, C:/Users/Anna/Desktop/Portfolio/scss/base/_base.scss */
+h1 {
+  font-size: 1px;
+  text-indent: -100%;
+  opacity: 0; }
+
+/* line 28, C:/Users/Anna/Desktop/Portfolio/scss/base/_base.scss */
+p {
+  font-size: 1.25em;
+  margin-top: 0; }
+
+/* line 33, C:/Users/Anna/Desktop/Portfolio/scss/base/_base.scss */
+img {
+  max-width: 100%; }
+
+/* line 37, C:/Users/Anna/Desktop/Portfolio/scss/base/_base.scss */
+::selection {
+  background: #00e3ff; }
+
+/* line 41, C:/Users/Anna/Desktop/Portfolio/scss/base/_base.scss */
+::-moz-selection {
+  background: #00e3ff;
+  color: #06032f; }
+
+/* line 17, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+body {
+  margin: 0; }
+
+/* line 21, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+.wrap {
+  padding: 0 35px;
+  margin: 0 auto;
+  max-width: 960px;
+  box-sizing: border-box; }
+
+/* line 28, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+.row {
+  margin-left: -35px;
+  margin-right: -35px; }
+  /* line 7, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .row:before, .row:after {
+    content: "";
+    display: table; }
+  /* line 12, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .row:after {
+    clear: both; }
+
+/* line 34, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+*[class*='col__'] {
+  position: relative;
+  min-height: 1px;
+  padding-left: 35px;
+  padding-right: 35px;
+  box-sizing: border-box;
+  white-space: normal;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+  margin-bottom: 20px; }
+
+@media (min-width: 769px) {
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__0-12 {
+    width: 0%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__0-12__center {
+    width: 0%;
+    margin-left: 50%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__0-12 {
+    margin-left: 0%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__1-12 {
+    width: 8.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__1-12__center {
+    width: 8.33333%;
+    margin-left: 45.83333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__1-12 {
+    margin-left: 8.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__2-12 {
+    width: 16.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__2-12__center {
+    width: 16.66667%;
+    margin-left: 41.66667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__2-12 {
+    margin-left: 16.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__3-12 {
+    width: 25%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__3-12__center {
+    width: 25%;
+    margin-left: 37.5%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__3-12 {
+    margin-left: 25%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__4-12 {
+    width: 33.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__4-12__center {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__4-12 {
+    margin-left: 33.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__5-12 {
+    width: 41.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__5-12__center {
+    width: 41.66667%;
+    margin-left: 29.16667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__5-12 {
+    margin-left: 41.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__6-12 {
+    width: 50%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__6-12__center {
+    width: 50%;
+    margin-left: 25%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__6-12 {
+    margin-left: 50%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__7-12 {
+    width: 58.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__7-12__center {
+    width: 58.33333%;
+    margin-left: 20.83333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__7-12 {
+    margin-left: 58.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__8-12 {
+    width: 66.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__8-12__center {
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__8-12 {
+    margin-left: 66.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__9-12 {
+    width: 75%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__9-12__center {
+    width: 75%;
+    margin-left: 12.5%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__9-12 {
+    margin-left: 75%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__10-12 {
+    width: 83.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__10-12__center {
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__10-12 {
+    margin-left: 83.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__11-12 {
+    width: 91.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__11-12__center {
+    width: 91.66667%;
+    margin-left: 4.16667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__11-12 {
+    margin-left: 91.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__12-12 {
+    width: 100%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__12-12__center {
+    width: 100%;
+    margin-left: 0%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__12-12 {
+    margin-left: 100%; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-0-12 {
+    width: 0%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-0-12__center {
+    width: 0%;
+    margin-left: 50%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-0-12 {
+    margin-left: 0% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-1-12 {
+    width: 8.33333%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-1-12__center {
+    width: 8.33333%;
+    margin-left: 45.83333%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-1-12 {
+    margin-left: 8.33333% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-2-12 {
+    width: 16.66667%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-2-12__center {
+    width: 16.66667%;
+    margin-left: 41.66667%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-2-12 {
+    margin-left: 16.66667% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-3-12 {
+    width: 25%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-3-12__center {
+    width: 25%;
+    margin-left: 37.5%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-3-12 {
+    margin-left: 25% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-4-12 {
+    width: 33.33333%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-4-12__center {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-4-12 {
+    margin-left: 33.33333% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-5-12 {
+    width: 41.66667%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-5-12__center {
+    width: 41.66667%;
+    margin-left: 29.16667%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-5-12 {
+    margin-left: 41.66667% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-6-12 {
+    width: 50%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-6-12__center {
+    width: 50%;
+    margin-left: 25%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-6-12 {
+    margin-left: 50% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-7-12 {
+    width: 58.33333%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-7-12__center {
+    width: 58.33333%;
+    margin-left: 20.83333%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-7-12 {
+    margin-left: 58.33333% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-8-12 {
+    width: 66.66667%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-8-12__center {
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-8-12 {
+    margin-left: 66.66667% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-9-12 {
+    width: 75%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-9-12__center {
+    width: 75%;
+    margin-left: 12.5%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-9-12 {
+    margin-left: 75% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-10-12 {
+    width: 83.33333%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-10-12__center {
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-10-12 {
+    margin-left: 83.33333% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-11-12 {
+    width: 91.66667%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-11-12__center {
+    width: 91.66667%;
+    margin-left: 4.16667%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-11-12 {
+    margin-left: 91.66667% !important; }
+  /* line 66, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-12-12 {
+    width: 100%;
+    margin-left: 0; }
+  /* line 70, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__lg-12-12__center {
+    width: 100%;
+    margin-left: 0%;
+    display: block; }
+  /* line 75, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__lg-12-12 {
+    margin-left: 100% !important; }
+  /* line 79, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .hidden__lg {
+    display: none; } }
+
+@media (max-width: 768px) and (min-width: 481px) {
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__0-12 {
+    width: 0%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__0-12__center {
+    width: 0%;
+    margin-left: 50%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__0-12 {
+    margin-left: 0%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__1-12 {
+    width: 8.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__1-12__center {
+    width: 8.33333%;
+    margin-left: 45.83333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__1-12 {
+    margin-left: 8.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__2-12 {
+    width: 16.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__2-12__center {
+    width: 16.66667%;
+    margin-left: 41.66667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__2-12 {
+    margin-left: 16.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__3-12 {
+    width: 25%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__3-12__center {
+    width: 25%;
+    margin-left: 37.5%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__3-12 {
+    margin-left: 25%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__4-12 {
+    width: 33.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__4-12__center {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__4-12 {
+    margin-left: 33.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__5-12 {
+    width: 41.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__5-12__center {
+    width: 41.66667%;
+    margin-left: 29.16667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__5-12 {
+    margin-left: 41.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__6-12 {
+    width: 50%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__6-12__center {
+    width: 50%;
+    margin-left: 25%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__6-12 {
+    margin-left: 50%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__7-12 {
+    width: 58.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__7-12__center {
+    width: 58.33333%;
+    margin-left: 20.83333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__7-12 {
+    margin-left: 58.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__8-12 {
+    width: 66.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__8-12__center {
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__8-12 {
+    margin-left: 66.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__9-12 {
+    width: 75%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__9-12__center {
+    width: 75%;
+    margin-left: 12.5%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__9-12 {
+    margin-left: 75%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__10-12 {
+    width: 83.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__10-12__center {
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__10-12 {
+    margin-left: 83.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__11-12 {
+    width: 91.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__11-12__center {
+    width: 91.66667%;
+    margin-left: 4.16667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__11-12 {
+    margin-left: 91.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__12-12 {
+    width: 100%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__12-12__center {
+    width: 100%;
+    margin-left: 0%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__12-12 {
+    margin-left: 100%; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-0-12 {
+    width: 0%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-0-12__center {
+    width: 0%;
+    margin-left: 50%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-0-12 {
+    margin-left: 0% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-1-12 {
+    width: 8.33333%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-1-12__center {
+    width: 8.33333%;
+    margin-left: 45.83333%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-1-12 {
+    margin-left: 8.33333% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-2-12 {
+    width: 16.66667%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-2-12__center {
+    width: 16.66667%;
+    margin-left: 41.66667%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-2-12 {
+    margin-left: 16.66667% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-3-12 {
+    width: 25%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-3-12__center {
+    width: 25%;
+    margin-left: 37.5%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-3-12 {
+    margin-left: 25% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-4-12 {
+    width: 33.33333%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-4-12__center {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-4-12 {
+    margin-left: 33.33333% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-5-12 {
+    width: 41.66667%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-5-12__center {
+    width: 41.66667%;
+    margin-left: 29.16667%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-5-12 {
+    margin-left: 41.66667% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-6-12 {
+    width: 50%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-6-12__center {
+    width: 50%;
+    margin-left: 25%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-6-12 {
+    margin-left: 50% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-7-12 {
+    width: 58.33333%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-7-12__center {
+    width: 58.33333%;
+    margin-left: 20.83333%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-7-12 {
+    margin-left: 58.33333% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-8-12 {
+    width: 66.66667%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-8-12__center {
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-8-12 {
+    margin-left: 66.66667% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-9-12 {
+    width: 75%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-9-12__center {
+    width: 75%;
+    margin-left: 12.5%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-9-12 {
+    margin-left: 75% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-10-12 {
+    width: 83.33333%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-10-12__center {
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-10-12 {
+    margin-left: 83.33333% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-11-12 {
+    width: 91.66667%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-11-12__center {
+    width: 91.66667%;
+    margin-left: 4.16667%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-11-12 {
+    margin-left: 91.66667% !important; }
+  /* line 87, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-12-12 {
+    width: 100%;
+    margin-left: 0; }
+  /* line 91, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__md-12-12__center {
+    width: 100%;
+    margin-left: 0%;
+    display: block; }
+  /* line 96, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__md-12-12 {
+    margin-left: 100% !important; }
+  /* line 100, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .hidden__md {
+    display: none; } }
+
+@media (max-width: 480px) {
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__0-12 {
+    width: 0%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__0-12__center {
+    width: 0%;
+    margin-left: 50%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__0-12 {
+    margin-left: 0%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__1-12 {
+    width: 8.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__1-12__center {
+    width: 8.33333%;
+    margin-left: 45.83333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__1-12 {
+    margin-left: 8.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__2-12 {
+    width: 16.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__2-12__center {
+    width: 16.66667%;
+    margin-left: 41.66667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__2-12 {
+    margin-left: 16.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__3-12 {
+    width: 25%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__3-12__center {
+    width: 25%;
+    margin-left: 37.5%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__3-12 {
+    margin-left: 25%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__4-12 {
+    width: 33.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__4-12__center {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__4-12 {
+    margin-left: 33.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__5-12 {
+    width: 41.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__5-12__center {
+    width: 41.66667%;
+    margin-left: 29.16667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__5-12 {
+    margin-left: 41.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__6-12 {
+    width: 50%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__6-12__center {
+    width: 50%;
+    margin-left: 25%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__6-12 {
+    margin-left: 50%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__7-12 {
+    width: 58.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__7-12__center {
+    width: 58.33333%;
+    margin-left: 20.83333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__7-12 {
+    margin-left: 58.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__8-12 {
+    width: 66.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__8-12__center {
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__8-12 {
+    margin-left: 66.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__9-12 {
+    width: 75%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__9-12__center {
+    width: 75%;
+    margin-left: 12.5%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__9-12 {
+    margin-left: 75%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__10-12 {
+    width: 83.33333%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__10-12__center {
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__10-12 {
+    margin-left: 83.33333%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__11-12 {
+    width: 91.66667%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__11-12__center {
+    width: 91.66667%;
+    margin-left: 4.16667%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__11-12 {
+    margin-left: 91.66667%; }
+  /* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__12-12 {
+    width: 100%; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__12-12__center {
+    width: 100%;
+    margin-left: 0%;
+    display: block; }
+  /* line 57, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__12-12 {
+    margin-left: 100%; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-0-12 {
+    width: 0%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-0-12__center {
+    width: 0%;
+    margin-left: 50%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-0-12 {
+    margin-left: 0% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-1-12 {
+    width: 8.33333%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-1-12__center {
+    width: 8.33333%;
+    margin-left: 45.83333%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-1-12 {
+    margin-left: 8.33333% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-2-12 {
+    width: 16.66667%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-2-12__center {
+    width: 16.66667%;
+    margin-left: 41.66667%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-2-12 {
+    margin-left: 16.66667% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-3-12 {
+    width: 25%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-3-12__center {
+    width: 25%;
+    margin-left: 37.5%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-3-12 {
+    margin-left: 25% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-4-12 {
+    width: 33.33333%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-4-12__center {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-4-12 {
+    margin-left: 33.33333% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-5-12 {
+    width: 41.66667%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-5-12__center {
+    width: 41.66667%;
+    margin-left: 29.16667%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-5-12 {
+    margin-left: 41.66667% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-6-12 {
+    width: 50%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-6-12__center {
+    width: 50%;
+    margin-left: 25%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-6-12 {
+    margin-left: 50% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-7-12 {
+    width: 58.33333%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-7-12__center {
+    width: 58.33333%;
+    margin-left: 20.83333%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-7-12 {
+    margin-left: 58.33333% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-8-12 {
+    width: 66.66667%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-8-12__center {
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-8-12 {
+    margin-left: 66.66667% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-9-12 {
+    width: 75%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-9-12__center {
+    width: 75%;
+    margin-left: 12.5%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-9-12 {
+    margin-left: 75% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-10-12 {
+    width: 83.33333%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-10-12__center {
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-10-12 {
+    margin-left: 83.33333% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-11-12 {
+    width: 91.66667%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-11-12__center {
+    width: 91.66667%;
+    margin-left: 4.16667%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-11-12 {
+    margin-left: 91.66667% !important; }
+  /* line 108, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-12-12 {
+    width: 100%;
+    margin-left: 0; }
+  /* line 112, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .col__sm-12-12__center {
+    width: 100%;
+    margin-left: 0%;
+    display: block; }
+  /* line 117, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .offset__sm-12-12 {
+    margin-left: 100% !important; }
+  /* line 121, C:/Users/Anna/Desktop/Portfolio/scss/layout/_grid.scss */
+  .hidden__sm {
+    display: none; } }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+/* line 5, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+#about img {
+  max-width: 200px;
+  position: relative;
+  right: 35px; }
+
+/* line 11, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+.about-links {
+  margin-left: 10%;
+  float: right; }
+
+/* line 16, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+.about-img {
+  margin-bottom: 40px;
+  position: relative; }
+  /* line 20, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+  .about-img:hover:before {
+    border: 14px solid #3e06c2; }
+  /* line 24, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+  .about-img:before {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    right: 8px;
+    border: 14px solid #00e3ff;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 100px;
+    transition: .5s ease-out; }
+
+/* line 41, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+.project-psd:hover {
+  color: #FB37BF; }
+
+/* line 46, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+.about-list li {
+  position: relative;
+  display: block;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.3; }
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+  .about-list li:before {
+    color: #3e06c2;
+    content: "•";
+    position: absolute;
+    top: -6px;
+    left: -10px;
+    font-size: 27px;
+    margin-left: -7px; }
+
+/* line 64, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+.cut-half {
+  columns: 2; }
+  @media screen and (min-width: 480px) {
+    /* line 64, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+    .cut-half {
+      columns: 1; } }
+  @media screen and (min-width: 630px) {
+    /* line 64, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+    .cut-half {
+      columns: 2; } }
+
+/* line 74, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+.cyan-link {
+  position: relative;
+  display: inline-block;
+  padding: 0 3px;
+  font-weight: bold;
+  margin-bottom: 1em; }
+  /* line 79, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+  .cyan-link span {
+    top: 7px; }
+
+/* line 85, C:/Users/Anna/Desktop/Portfolio/scss/layout/_containers.scss */
+.dev {
+  margin-top: 1em; }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+/* line 5, C:/Users/Anna/Desktop/Portfolio/scss/layout/_header.scss */
+header {
+  padding: 1em 0 .25em;
+  position: relative; }
+
+/* line 11, C:/Users/Anna/Desktop/Portfolio/scss/layout/_header.scss */
+.banner {
+  min-height: calc(100vh - 9em);
+  background-color: #e2e2e2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em; }
+  /* line 20, C:/Users/Anna/Desktop/Portfolio/scss/layout/_header.scss */
+  .banner:before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -28px;
+    left: -28px;
+    border: 14px solid #00e3ff;
+    z-index: -1; }
+
+/* line 32, C:/Users/Anna/Desktop/Portfolio/scss/layout/_header.scss */
+.headline {
+  font-family: "JaapokkiSubtract", sans-serif;
+  text-transform: uppercase;
+  color: #4607db;
+  font-size: 4.75em;
+  margin: 0 auto .75em; }
+
+/* line 1, C:/Users/Anna/Desktop/Portfolio/scss/layout/_form.scss */
+#contact {
+  margin: 1.5em auto 2em;
+  padding: 3em 4em 8em;
+  background-color: #e2e2e2;
+  text-align: center;
+  position: relative; }
+  /* line 7, C:/Users/Anna/Desktop/Portfolio/scss/layout/_form.scss */
+  #contact:after {
+    content: "";
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    right: -32px;
+    bottom: -32px;
+    border: 14px solid #00e3ff;
+    z-index: -1; }
+
+/* line 19, C:/Users/Anna/Desktop/Portfolio/scss/layout/_form.scss */
+form {
+  max-width: 600px;
+  font-size: 1.125em; }
+
+/* line 24, C:/Users/Anna/Desktop/Portfolio/scss/layout/_form.scss */
+input:invalid {
+  box-shadow: none;
+  border: none;
+  border-bottom: 8px solid #FB37BF; }
+
+/* line 30, C:/Users/Anna/Desktop/Portfolio/scss/layout/_form.scss */
+textarea,
+input {
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  border-bottom: 8px solid #f5f5f5;
+  background-color: #f5f5f5; }
+  /* line 39, C:/Users/Anna/Desktop/Portfolio/scss/layout/_form.scss */
+  textarea:focus,
+  input:focus {
+    border-bottom: 8px solid #3e06c2;
+    outline: none; }
+
+/* line 45, C:/Users/Anna/Desktop/Portfolio/scss/layout/_form.scss */
+textarea {
+  resize: vertical;
+  min-height: 150px;
+  max-height: 300px; }
+
+/* line 51, C:/Users/Anna/Desktop/Portfolio/scss/layout/_form.scss */
+#form-messages {
+  padding: .5em 1em .75em 1em;
+  margin-bottom: 0.75rem;
+  border-radius: 2px;
+  font-size: 1.23em; }
+
+/* line 58, C:/Users/Anna/Desktop/Portfolio/scss/layout/_form.scss */
+.success {
+  border: none;
+  color: #3e06c2;
+  border-bottom: 8px solid #3e06c2; }
+
+/* line 64, C:/Users/Anna/Desktop/Portfolio/scss/layout/_form.scss */
+.error {
+  border: none;
+  color: #E53935;
+  border-bottom: 8px solid #E53935; }
+
+/* line 1, C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss */
+#portfolio {
+  margin-top: 0;
+  padding-top: 3em; }
+
+/* line 6, C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss */
+.project {
+  padding: 1em 0 0 3em; }
+
+/* line 10, C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss */
+.img-portfolio:hover {
+  box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.3); }
+
+/* line 14, C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss */
+.used li {
+  display: block;
+  padding-left: 3em;
+  font-size: 1.125em;
+  font-weight: 600;
+  color: #787787; }
+
+/* line 22, C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss */
+hr {
+  width: 4em;
+  float: left;
+  position: relative;
+  top: 18px;
+  border: 0px solid #e2e2e2;
+  border-top: 3px solid #e2e2e2; }
+
+/* line 31, C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss */
+.violet {
+  border-top: 3px solid #4d07eb; }
+
+/* line 35, C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss */
+figure {
+  margin: 4em 0 0; }
+
+/* line 39, C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss */
+.starnight:before {
+  content: url("../img/patterns/pattern.svg");
+  overflow: hidden;
+  position: absolute;
+  top: -22px;
+  left: -25px;
+  width: 80%;
+  z-index: -1; }
+
+/* line 49, C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss */
+.apollo,
+.starnight {
+  position: relative; }
+
+/* line 54, C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss */
+.apollo:before {
+  overflow: hidden;
+  content: url("../img/patterns/violet-dots.svg");
+  z-index: -1;
+  position: absolute;
+  right: -23px;
+  bottom: -25px;
+  width: 100px; }
+
+/* line 64, C:/Users/Anna/Desktop/Portfolio/scss/layout/_portfolio.scss */
+#portfolio + p {
+  font-weight: 300;
+  margin-top: 50px; }
+
+/* line 1, C:/Users/Anna/Desktop/Portfolio/scss/modules/_buttons.scss */
+.button {
+  position: absolute;
+  bottom: 2em;
+  left: 42%;
+  background-color: #FB37BF;
+  border-radius: 30px;
+  font-size: 1.5625em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  z-index: 1;
+  transition: .6s; }
+  /* line 12, C:/Users/Anna/Desktop/Portfolio/scss/modules/_buttons.scss */
+  .button:hover {
+    background-color: #00e3ff; }
+    /* line 14, C:/Users/Anna/Desktop/Portfolio/scss/modules/_buttons.scss */
+    .button:hover a {
+      color: #3e06c2; }
+    /* line 17, C:/Users/Anna/Desktop/Portfolio/scss/modules/_buttons.scss */
+    .button:hover:before {
+      border: 3px solid #00e3ff; }
+  /* line 21, C:/Users/Anna/Desktop/Portfolio/scss/modules/_buttons.scss */
+  .button a {
+    display: inline-block;
+    padding: 10px 30px 10px 36px;
+    color: #f5f5f5; }
+  /* line 26, C:/Users/Anna/Desktop/Portfolio/scss/modules/_buttons.scss */
+  .button:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 3px solid #FB37BF;
+    z-index: -2;
+    transition: .6s; }
+
+/* line 40, C:/Users/Anna/Desktop/Portfolio/scss/modules/_buttons.scss */
+.btn-submit {
+  display: block;
+  padding: 10px 20px 10px 22px;
+  color: #f5f5f5;
+  border: none; }
+  /* line 45, C:/Users/Anna/Desktop/Portfolio/scss/modules/_buttons.scss */
+  .btn-submit:hover {
+    color: #3e06c2; }
+  /* line 48, C:/Users/Anna/Desktop/Portfolio/scss/modules/_buttons.scss */
+  .btn-submit:before {
+    position: absolute;
+    top: 0px;
+    left: 0; }
+
+/* line 1, C:/Users/Anna/Desktop/Portfolio/scss/modules/_icons.scss */
+.icons {
+  margin: 30px auto; }
+
+/* line 5, C:/Users/Anna/Desktop/Portfolio/scss/modules/_icons.scss */
+.icon {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  right: 14px;
+  margin-bottom: 30px; }
+
+/* line 13, C:/Users/Anna/Desktop/Portfolio/scss/modules/_icons.scss */
+a svg {
+  box-sizing: padding-box;
+  padding: 2px;
+  fill: #3e06c2; }
+
+/* line 19, C:/Users/Anna/Desktop/Portfolio/scss/modules/_icons.scss */
+a:hover svg {
+  fill: #1e035f; }
+
+/* line 13, C:/Users/Anna/Desktop/Portfolio/scss/modules/_navigation.scss */
+nav {
+  float: right;
+  margin-top: 1em;
+  position: relative; }
+  /* line 17, C:/Users/Anna/Desktop/Portfolio/scss/modules/_navigation.scss */
+  nav a {
+    font-size: 1.25em;
+    margin-left: 10px;
+    padding: 5px;
+    position: relative; }
+  /* line 23, C:/Users/Anna/Desktop/Portfolio/scss/modules/_navigation.scss */
+  nav ul {
+    margin-bottom: 14px; }
+
+/* line 28, C:/Users/Anna/Desktop/Portfolio/scss/modules/_navigation.scss */
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 0;
+  font-weight: 700; }
+
+/* line 35, C:/Users/Anna/Desktop/Portfolio/scss/modules/_navigation.scss */
+a span {
+  position: absolute;
+  left: 0;
+  top: .675em;
+  width: 0;
+  height: 17px;
+  background: #00e3ff;
+  z-index: -1;
+  transition: .3s ease-in-out; }
+
+/* line 46, C:/Users/Anna/Desktop/Portfolio/scss/modules/_navigation.scss */
+a:hover span {
+  width: 100%; }
+
+/* line 1, C:/Users/Anna/Desktop/Portfolio/scss/modules/_figures.scss */
+.banner-circle:first-child {
+  position: absolute;
+  right: 10%;
+  top: 25%;
+  height: 34px;
+  width: 34px;
+  opacity: .5; }
+
+/* line 10, C:/Users/Anna/Desktop/Portfolio/scss/modules/_figures.scss */
+.banner-circle:nth-child(2) {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  height: 38px;
+  width: 38px; }
+
+/* line 18, C:/Users/Anna/Desktop/Portfolio/scss/modules/_figures.scss */
+.banner-shape {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  width: 59px;
+  height: 45px; }
+
+/* line 26, C:/Users/Anna/Desktop/Portfolio/scss/modules/_figures.scss */
+.banner-triangle {
+  width: 33px;
+  height: 27px;
+  position: absolute;
+  right: 20%;
+  bottom: 25%; }
+
+/* line 2, C:/Users/Anna/Desktop/Portfolio/scss/modules/_tooltip.scss */
+.tooltip {
+  cursor: pointer;
+  position: relative; }
+  /* line 5, C:/Users/Anna/Desktop/Portfolio/scss/modules/_tooltip.scss */
+  .tooltip:before, .tooltip:after {
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    z-index: -100;
+    transition: all 0.45s ease; }
+  /* line 13, C:/Users/Anna/Desktop/Portfolio/scss/modules/_tooltip.scss */
+  .tooltip:hover {
+    color: #FB37BF; }
+
+/* line 18, C:/Users/Anna/Desktop/Portfolio/scss/modules/_tooltip.scss */
+.tooltip:hover::before,
+.tooltip:focus::before,
+.tooltip:hover::after,
+.tooltip:focus::after {
+  opacity: 1;
+  z-index: 100;
+  transition: all 0.45s ease; }
+
+/* line 28, C:/Users/Anna/Desktop/Portfolio/scss/modules/_tooltip.scss */
+.tooltip::before {
+  border-style: solid;
+  border-width: 1em 0.75em 0 0.75em;
+  border-color: #e2e2e2 transparent transparent transparent;
+  bottom: 100%;
+  content: "";
+  margin-left: -.75em; }
+
+/* line 38, C:/Users/Anna/Desktop/Portfolio/scss/modules/_tooltip.scss */
+.tooltip::after {
+  background: #e2e2e2;
+  border-radius: .25em;
+  bottom: 178%;
+  color: #06032f;
+  content: attr(data-tip);
+  font-size: .9em;
+  font-weight: normal;
+  margin-left: -8.75em;
+  padding: 1em;
+  width: 16.5em; }
+
+@media (max-width: 760px) {
+  /* line 52, C:/Users/Anna/Desktop/Portfolio/scss/modules/_tooltip.scss */
+  .tooltip::after {
+    font-size: .75em;
+    margin-left: -5em;
+    width: 10em; } }
+
+/*# sourceMappingURL=application.css.map */
