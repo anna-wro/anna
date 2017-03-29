@@ -16,8 +16,8 @@ $(function () {
 //
 $('figure').hover(function () {
     $(this).next("div").children("hr").toggleClass("violet");
-    //    $(this).next("div").children(".icon-link").toggleClass("visible");
 });
+
 // Mail
 $(function () {
 
