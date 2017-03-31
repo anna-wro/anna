@@ -51,7 +51,7 @@
         line-height: 1.3;
         &:before {
             color: $violet;
-            content: "•";
+            content: "\2022";
             position: absolute;
             top: -6px;
             left: -10px;
