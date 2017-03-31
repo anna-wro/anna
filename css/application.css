@@ -1407,6 +1407,10 @@ body {
     font-size: 27px;
     margin-left: -7px; }
 
+.about row {
+  margin-left: 0;
+  margin-right: 0; }
+
 .cut-half {
   columns: 2; }
   @media screen and (min-width: 480px) {
