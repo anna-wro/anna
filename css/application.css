@@ -1698,35 +1698,24 @@ a:hover span {
 .menu {
   position: fixed;
   top: 50%;
-  right: 50px;
+  right: 30px;
   transform: translateY(-50%); }
   .menu .dot {
     display: block;
-    border: 5px solid orange;
-    background: orange;
-    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
     border-radius: 10px;
     width: 20px;
     height: 20px;
     cursor: pointer;
     color: #000;
     text-decoration: none; }
-    .menu .dot, .menu .dot:hover, .menu .dot span {
+    .menu .dot, .menu .dot:hover {
       transition: all 200ms ease; }
-    .menu .dot:hover, .menu .dot.active {
-      background: transparent;
-      transform: scale(1.2); }
-      .menu .dot:hover span, .menu .dot.active span {
-        opacity: 1; }
-        .menu .dot:hover span.forty, .menu .dot.active span.forty {
-          transform: translate(-45px, -3px); }
-        .menu .dot:hover span.sixty, .menu .dot.active span.sixty {
-          transform: translate(-60px, -3px); }
-    .menu .dot span {
-      font-size: 12px;
-      display: block;
-      transform: translate(0, -3px);
-      opacity: 0; }
+    .menu .dot.active {
+      background: #00e3ff; }
+    .menu .dot:hover {
+      background: #FB37BF; }
 
 .banner-circle:first-child {
   position: absolute;

@@ -63,17 +63,17 @@ a:hover span {
 *
  ***/
 
+
 .menu {
   position: fixed;
   top: 50%;
-  right: 50px;
+  right: 30px;
   transform: translateY(-50%);
 
   .dot {
     display: block;
-    border: 5px solid orange;
-    background: orange;
-    margin-bottom: 20px;
+    background: rgba(0, 0, 0, .1);
+    margin-bottom: 15px;
     border-radius: 10px;
     width: 20px;
     height: 20px;
@@ -81,31 +81,18 @@ a:hover span {
     color: #000;
     text-decoration: none;
 
-    &, &:hover, span {
+    &, &:hover {
       transition: all 200ms ease;
     }
 
-    &:hover, &.active {
-      background: transparent;
-      transform: scale(1.2);
-
-      span {
-        opacity: 1;
-        &.forty {
-          transform: translate(-45px, -3px);
-        }
-        &.sixty {
-          transform: translate(-60px, -3px);
-        }
-      }
+    &.active {
+      background: $cyan;
+    }
+    &:hover {
+      background: $pink;
     }
 
-    span {
-      font-size: 12px;
-      display: block;
-      transform: translate(0, -3px);
-      opacity: 0;
-    }
+
   }
 
 }

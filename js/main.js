@@ -1,4 +1,7 @@
-//Smooth scrolling
+/*
+ * Smooth scrolling
+ */
+
 $(function () {
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -18,7 +21,10 @@ $('figure').hover(function () {
     $(this).next("div").children("hr").toggleClass("violet");
 });
 
-// Mail
+/*
+ * Mail
+ */
+
 $(function () {
 
     // Get the form.
@@ -70,6 +76,10 @@ $(function () {
     });
 
 });
+
+/*
+ * Scroll spy
+ */
 
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
