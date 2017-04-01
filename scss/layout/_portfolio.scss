@@ -13,19 +13,24 @@
 
 .used li {
     display: block;
-    padding-left: 3em;
     font-size: 1.125em;
     font-weight: 600;
     color: #787787;
+    @media screen and (min-width: 480px) {
+        padding-left: 3em;
+    }
 }
 
 hr {
-    width: 4em;
+    width: 2em;
     float: left;
     position: relative;
     top: 18px;
     border: 0px solid $gray-1;
     border-top: 3px solid $gray-1;
+    @media screen and (min-width: 480px) {
+        width: 4em;
+    }
 }
 
 .violet {

@@ -33,6 +33,10 @@ header {
     font-family: $font-family-primary;
     text-transform: uppercase;
     color: lighten($violet, 5%);
-    font-size: em(76px);
+    font-size: em(48px);
     margin: 0 auto .75em;
+    text-align: center;
+    @media screen and (min-width: 480px) {
+        font-size: em(76px);
+    }
 }
