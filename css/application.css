@@ -1407,10 +1407,6 @@ body {
     font-size: 27px;
     margin-left: -7px; }
 
-.about row {
-  margin-left: 0;
-  margin-right: 0; }
-
 .cut-half {
   columns: 2; }
   @media screen and (min-width: 480px) {
@@ -1462,8 +1458,12 @@ header {
   font-family: "JaapokkiSubtract", sans-serif;
   text-transform: uppercase;
   color: #4607db;
-  font-size: 4.75em;
-  margin: 0 auto .75em; }
+  font-size: 3em;
+  margin: 0 auto .75em;
+  text-align: center; }
+  @media screen and (min-width: 480px) {
+    .headline {
+      font-size: 4.75em; } }
 
 #contact {
   margin: 1.5em auto 2em;
@@ -1537,18 +1537,23 @@ textarea {
 
 .used li {
   display: block;
-  padding-left: 3em;
   font-size: 1.125em;
   font-weight: 600;
   color: #787787; }
+  @media screen and (min-width: 480px) {
+    .used li {
+      padding-left: 3em; } }
 
 hr {
-  width: 4em;
+  width: 2em;
   float: left;
   position: relative;
   top: 18px;
   border: 0px solid #e2e2e2;
   border-top: 3px solid #e2e2e2; }
+  @media screen and (min-width: 480px) {
+    hr {
+      width: 4em; } }
 
 .violet {
   border-top: 3px solid #4d07eb; }
@@ -1584,8 +1589,11 @@ figure {
 
 .button {
   position: absolute;
+  max-width: 150px;
   bottom: 2em;
-  left: 42%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   background-color: #FB37BF;
   border-radius: 30px;
   font-size: 1.5625em;
@@ -1616,16 +1624,13 @@ figure {
     transition: .6s; }
 
 .btn-submit {
+  width: 100%;
   display: block;
   padding: 10px 20px 10px 22px;
   color: #f5f5f5;
   border: none; }
   .btn-submit:hover {
     color: #3e06c2; }
-  .btn-submit:before {
-    position: absolute;
-    top: 0px;
-    left: 0; }
 
 .icons {
   margin: 30px auto; }
@@ -1645,23 +1650,32 @@ a svg {
 a:hover svg {
   fill: #1e035f; }
 
-nav {
+.top_nav {
   float: right;
   margin-top: 1em;
+  text-align: right;
   position: relative; }
-  nav a {
+  .top_nav a {
     font-size: 1.25em;
     margin-left: 10px;
     padding: 5px;
     position: relative; }
-  nav ul {
+  .top_nav ul {
     margin-bottom: 14px; }
 
-nav li {
-  display: inline-block;
+/***
+*
+* Top navigation
+*
+ ***/
+.top_nav li {
+  display: block;
   list-style-type: none;
   padding-left: 0;
   font-weight: 700; }
+  @media screen and (min-width: 480px) {
+    .top_nav li {
+      display: inline-block; } }
 
 a span {
   position: absolute;
@@ -1675,6 +1689,44 @@ a span {
 
 a:hover span {
   width: 100%; }
+
+/***
+*
+* Side navigation
+*
+ ***/
+.menu {
+  position: fixed;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%); }
+  .menu .dot {
+    display: block;
+    border: 5px solid orange;
+    background: orange;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none; }
+    .menu .dot, .menu .dot:hover, .menu .dot span {
+      transition: all 200ms ease; }
+    .menu .dot:hover, .menu .dot.active {
+      background: transparent;
+      transform: scale(1.2); }
+      .menu .dot:hover span, .menu .dot.active span {
+        opacity: 1; }
+        .menu .dot:hover span.forty, .menu .dot.active span.forty {
+          transform: translate(-45px, -3px); }
+        .menu .dot:hover span.sixty, .menu .dot.active span.sixty {
+          transform: translate(-60px, -3px); }
+    .menu .dot span {
+      font-size: 12px;
+      display: block;
+      transform: translate(0, -3px);
+      opacity: 0; }
 
 .banner-circle:first-child {
   position: absolute;

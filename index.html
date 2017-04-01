@@ -42,10 +42,11 @@
     <div class="row">
         <div class="col__12-12">
             <header>
-                <nav>
+                <nav class="top_nav">
                     <ul>
                         <li><a href="#about">About me<span></span><span></span></a></li>
-                        <li><a href="#portfolio">Portfolio<span></span></a></li>
+                        <li><a href="#skills">Skills<span></span></a></li>
+                        <li><a href="#projects">Projects<span></span></a></li>
                         <li><a href="#contact">Contact me<span></span></a></li>
                     </ul>
                 </nav>
@@ -59,7 +60,7 @@
             <!-- /banner -->
         </div>
         <div id="about">
-            <div class="col__10-12__center col__md-10-12__center col__sm-11-12__center">
+            <div class="col__10-12__center col__md-10-12__center col__sm-10-12__center">
                 <div class="about-links">
                     <div class="about-img"><img src="img/me.png" class="me" alt=""></div>
                     <a href="mailto:hello@anna.pm">
@@ -104,13 +105,17 @@
                 <p><strong>I&nbsp;am&nbsp;currently looking for&nbsp;an&nbsp;internship in&nbsp;Cracow.</strong> If&nbsp;you
                     want to&nbsp;give me&nbsp;a&nbsp;chance, please <a href="#contact" class="cyan-link">let me
                         know<span></span></a>.</p>
-                <p><strong>Communication</strong></p>
-                <ul class="about-list">
-                    <li>Polish - mother tongue</li>
-                    <li>English - upper intermediate</li>
-                    <li>Polish Sign Language - elementary</li>
-                </ul>
             </div>
+        </div>
+    </div>
+    <div class="row" id="skills">
+        <div class="offset__1-12 col__10-12">
+            <p><strong>Communication</strong></p>
+            <ul class="about-list">
+                <li>Polish - mother tongue</li>
+                <li>English - upper intermediate</li>
+                <li>Polish Sign Language - elementary</li>
+            </ul>
         </div>
         <div class="offset__1-12 offset__md-1-12  col__sm-10-12__center dev col__md-5-12">
             <p><strong>Development</strong></p>
@@ -123,7 +128,6 @@
                 <li>Git</li>
             </ul>
         </div>
-
         <div class="offset__sm-1-12 col__md-5-12 dev">
             <p class="design"><strong>Design</strong></p>
             <ul class="about-list">
@@ -135,11 +139,17 @@
             </ul>
         </div>
         <div class="offset__1-12 col__10-12">
+            <p><strong>Scholarships</strong></p>
+            <ul class="about-list">
+                <li>Google EU Scholarship - Android Development for Beginners <br>January 12 - April 12, 2017</li>
+            </ul>
+        </div>
+        <div class="offset__1-12 col__10-12">
             <p>To get a better sense of what I'm capable of, please take a look at my projects below.</p>
         </div>
     </div>
     <!-- /about -->
-    <div class="row" id="portfolio">
+    <div class="row" id="projects">
         <div class="offset__1-12 col__5-12 col__md-9-12__center col__sm-11-12__center">
             <h2>portfolio</h2>
             <p>Here you can see some of my projects that&nbsp;I'm happy to share.</p>
@@ -224,12 +234,17 @@
         </div>
     </div>
     <!-- /contact -->
+    <div class="menu">
+        <a class="dot" href="#about"><span class="forty">About me</span></a>
+        <a class="dot" href="#skills"><span class="forty">Skills</span></a>
+        <a class="dot" href="#projects"><span class="sixty">Projects</span></a>
+        <a class="dot" href="#contact"><span class="sixty">Contact me</span></a>
+    </div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 </script>
 <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-
 </script>
 <script src="js/main.js"></script>
 </body>

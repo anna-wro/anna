@@ -70,3 +70,45 @@ $(function () {
     });
 
 });
+
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+
+    //smooth scroll
+    $('.menu a').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        console.log('click');
+
+        $('.menu a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 25
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    $('.menu a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        var top = refElement.position().top - 100;
+        if (top <= scrollPos && top + refElement.height() > scrollPos) {
+            $('.menu a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else {
+            currLink.removeClass("active");
+        }
+    });
+}
