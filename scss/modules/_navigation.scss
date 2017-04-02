@@ -63,8 +63,8 @@ a:hover span {
 *
  ***/
 
-
-.menu {
+.dot_nav {
+  visibility: hidden;
   position: fixed;
   top: 50%;
   right: 30px;
@@ -72,6 +72,7 @@ a:hover span {
 
   .dot {
     display: block;
+    overflow: hidden;
     background: rgba(0, 0, 0, .1);
     margin-bottom: 15px;
     border-radius: 10px;
@@ -80,19 +81,16 @@ a:hover span {
     cursor: pointer;
     color: #000;
     text-decoration: none;
+    transition: background 0.3s ease;
 
     &, &:hover {
       transition: all 200ms ease;
     }
-
     &.active {
       background: $cyan;
     }
     &:hover {
       background: $pink;
     }
-
-
   }
-
 }

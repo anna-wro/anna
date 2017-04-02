@@ -1695,13 +1695,15 @@ a:hover span {
 * Side navigation
 *
  ***/
-.menu {
+.dot_nav {
+  visibility: hidden;
   position: fixed;
   top: 50%;
   right: 30px;
   transform: translateY(-50%); }
-  .menu .dot {
+  .dot_nav .dot {
     display: block;
+    overflow: hidden;
     background: rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
     border-radius: 10px;
@@ -1709,12 +1711,13 @@ a:hover span {
     height: 20px;
     cursor: pointer;
     color: #000;
-    text-decoration: none; }
-    .menu .dot, .menu .dot:hover {
+    text-decoration: none;
+    transition: background 0.3s ease; }
+    .dot_nav .dot, .dot_nav .dot:hover {
       transition: all 200ms ease; }
-    .menu .dot.active {
+    .dot_nav .dot.active {
       background: #00e3ff; }
-    .menu .dot:hover {
+    .dot_nav .dot:hover {
       background: #FB37BF; }
 
 .banner-circle:first-child {
