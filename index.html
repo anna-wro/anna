@@ -42,14 +42,22 @@
     <div class="row">
         <div class="col__12-12">
             <header>
-                <nav class="top_nav">
-                    <ul>
-                        <li><a href="#about">About me<span></span><span></span></a></li>
-                        <li><a href="#skills">Skills<span></span></a></li>
-                        <li><a href="#projects">Projects<span></span></a></li>
-                        <li><a href="#contact">Contact<span></span></a></li>
-                    </ul>
-                </nav>
+                <div class="burger-container">
+                    <input id="burger" type="checkbox"/>
+                    <label for="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav class="top_nav">
+                        <ul>
+                            <li><a href="#about">About me<span></span></a></li>
+                            <li><a href="#skills">Skills<span></span></a></li>
+                            <li><a href="#projects">Projects<span></span></a></li>
+                            <li><a href="#contact">Contact<span></span></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
             <div class="banner">
                 <h1>Anna Wróbel</h1>
@@ -235,10 +243,12 @@
     </div>
     <!-- /contact -->
     <nav class="dot_nav">
-        <a class="dot" href="#about"><span>About</span></a>
-        <a class="dot" href="#skills"><span>Skills</span></a>
-        <a class="dot" href="#projects"><span>Projects</span></a>
-        <a class="dot" href="#contact"><span>Contact</span></a>
+        <ul>
+            <li><a class="dot" href="#about"><span>About</span></a></li>
+            <li><a class="dot" href="#skills"><span>Skills</span></a></li>
+            <li><a class="dot" href="#projects"><span>Projects</span></a></li>
+            <li><a class="dot" href="#contact"><span>Contact</span></a></li>
+        </ul>
     </nav>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
