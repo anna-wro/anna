@@ -81,7 +81,6 @@ a:hover span {
     cursor: pointer;
     color: #000;
     text-decoration: none;
-    transition: background 0.3s ease;
 
     &, &:hover {
       transition: all 200ms ease;
@@ -92,5 +91,9 @@ a:hover span {
     &:hover {
       background: $pink;
     }
+    span {
+      opacity: 0;
+    }
   }
+
 }

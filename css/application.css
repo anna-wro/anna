@@ -1711,14 +1711,15 @@ a:hover span {
     height: 20px;
     cursor: pointer;
     color: #000;
-    text-decoration: none;
-    transition: background 0.3s ease; }
+    text-decoration: none; }
     .dot_nav .dot, .dot_nav .dot:hover {
       transition: all 200ms ease; }
     .dot_nav .dot.active {
       background: #00e3ff; }
     .dot_nav .dot:hover {
       background: #FB37BF; }
+    .dot_nav .dot span {
+      opacity: 0; }
 
 .banner-circle:first-child {
   position: absolute;
