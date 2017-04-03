@@ -1371,6 +1371,11 @@ body {
   margin-left: 10%;
   float: right; }
 
+@media screen and (max-width: 550px) {
+  .about-links + p {
+    clear: both;
+    width: 100%;
+    display: block; } }
 .about-img {
   margin-bottom: 40px;
   position: relative; }
@@ -1425,9 +1430,6 @@ body {
   .cyan-link span {
     top: 7px; }
 
-.dev {
-  margin-top: 1em; }
-
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -1471,15 +1473,16 @@ header {
   background-color: #e2e2e2;
   text-align: center;
   position: relative; }
-  #contact:after {
-    content: "";
-    width: 200px;
-    height: 150px;
-    position: absolute;
-    right: -32px;
-    bottom: -32px;
-    border: 14px solid #00e3ff;
-    z-index: -1; }
+  @media screen and (min-width: 480px) {
+    #contact:after {
+      content: "";
+      width: 200px;
+      height: 150px;
+      position: absolute;
+      right: -32px;
+      bottom: -32px;
+      border: 14px solid #00e3ff;
+      z-index: -1; } }
 
 form {
   max-width: 600px;

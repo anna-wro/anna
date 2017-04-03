@@ -4,15 +4,18 @@
     background-color: $gray-1;
     text-align: center;
     position: relative;
-    &:after {
-        content: "";
-        width: 200px;
-        height: 150px;
-        position: absolute;
-        right: -32px;
-        bottom: -32px;
-        border: 14px solid $cyan;
-        z-index: -1;
+
+    @media screen and (min-width: 480px){
+        &:after {
+            content: "";
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            right: -32px;
+            bottom: -32px;
+            border: 14px solid $cyan;
+            z-index: -1;
+        }
     }
 }
 
