@@ -3,6 +3,12 @@ header:after {
   display: table;
   clear: both; }
 
+@media screen and (max-width: 768px) {
+  .target::before {
+    content: "";
+    display: block;
+    height: 70px;
+    margin: -70px 0 0; } }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -1745,10 +1751,12 @@ a:hover svg {
         transition-delay: 0s; }
         #burger ~ nav > ul > li > a {
           text-transform: uppercase;
-          color: #00e3ff;
+          color: #3e06c2;
           font-weight: 600;
           display: block;
           padding: 20px; }
+          #burger ~ nav > ul > li > a:hover {
+            color: #4d07eb; }
 
   #burger:checked ~ nav {
     height: 100%;
@@ -1830,35 +1838,6 @@ a:hover svg {
       background: #FB37BF; }
     .dot_nav .dot span {
       opacity: 0; }
-
-.banner-circle:first-child {
-  position: absolute;
-  right: 10%;
-  top: 25%;
-  height: 34px;
-  width: 34px;
-  opacity: .5; }
-
-.banner-circle:nth-child(2) {
-  position: absolute;
-  left: 10%;
-  top: 20%;
-  height: 38px;
-  width: 38px; }
-
-.banner-shape {
-  position: absolute;
-  bottom: 30%;
-  left: 10%;
-  width: 59px;
-  height: 45px; }
-
-.banner-triangle {
-  width: 33px;
-  height: 27px;
-  position: absolute;
-  right: 20%;
-  bottom: 25%; }
 
 .tooltip {
   cursor: pointer;

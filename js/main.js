@@ -126,3 +126,12 @@ function onScroll(event) {
         $(".dot_nav").css('visibility', 'hidden');
     }
 }
+
+// Close mobile nav onclick
+$(function () {
+    $('.top_nav').find('a').on('click', closeNav);
+});
+
+function closeNav() {
+    jQuery("#burger").attr('checked', false);
+}
