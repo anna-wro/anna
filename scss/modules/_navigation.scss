@@ -1,10 +1,25 @@
+
+.top_nav a {
+    font-size: 1.25em;
+    margin-left: 10px;
+    padding: 5px;
+    position: relative;
+}
+
 /***
 *
 * Top navigation - mobile
 *
  ***/
 
-@media screen and (max-width: 480px) {
+#burger, #burger label {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin-top: 70px;
+  }
 
   .dot_nav {
     display: none;
@@ -89,12 +104,9 @@
         transition: .5s;
         transition-delay: 0s;
         > a {
-          text-decoration: none;
           text-transform: uppercase;
           color: $cyan;
-          font-weight: 700;
-          font-family: sans-serif;
-          font-size: em(20px);
+          font-weight: 600;
           display: block;
           padding: 20px;
         }
@@ -120,7 +132,7 @@
 *
  ***/
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 769px) {
   #burger, #burger label {
     display: none;
   }
@@ -130,12 +142,6 @@
     margin-top: 1em;
     text-align: right;
     position: relative;
-    a {
-      font-size: 1.25em;
-      margin-left: 10px;
-      padding: 5px;
-      position: relative;
-    }
     ul {
       margin-bottom: 14px;
     }

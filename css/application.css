@@ -1650,12 +1650,24 @@ a svg {
 a:hover svg {
   fill: #1e035f; }
 
+.top_nav a {
+  font-size: 1.25em;
+  margin-left: 10px;
+  padding: 5px;
+  position: relative; }
+
 /***
 *
 * Top navigation - mobile
 *
  ***/
-@media screen and (max-width: 480px) {
+#burger, #burger label {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  body {
+    margin-top: 70px; }
+
   .dot_nav {
     display: none; }
 
@@ -1726,12 +1738,9 @@ a:hover svg {
         transition: .5s;
         transition-delay: 0s; }
         #burger ~ nav > ul > li > a {
-          text-decoration: none;
           text-transform: uppercase;
           color: #00e3ff;
-          font-weight: 700;
-          font-family: sans-serif;
-          font-size: 1.25em;
+          font-weight: 600;
           display: block;
           padding: 20px; }
 
@@ -1746,7 +1755,7 @@ a:hover svg {
 * Top navigation - wider
 *
  ***/
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 769px) {
   #burger, #burger label {
     display: none; }
 
@@ -1755,11 +1764,6 @@ a:hover svg {
     margin-top: 1em;
     text-align: right;
     position: relative; }
-    .top_nav a {
-      font-size: 1.25em;
-      margin-left: 10px;
-      padding: 5px;
-      position: relative; }
     .top_nav ul {
       margin-bottom: 14px; }
 
@@ -1768,11 +1772,11 @@ a:hover svg {
     list-style-type: none;
     padding-left: 0;
     font-weight: 700; } }
-  @media screen and (min-width: 481px) and (min-width: 480px) {
+  @media screen and (min-width: 769px) and (min-width: 480px) {
     .top_nav li {
       display: inline-block; } }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 769px) {
   a span {
     position: absolute;
     left: 0;
