@@ -1411,6 +1411,9 @@ body {
     left: -10px;
     font-size: 27px;
     margin-left: -7px; }
+@media screen and (min-width: 480px) {
+  .about-list br {
+    display: none; } }
 
 .cut-half {
   columns: 2; }
