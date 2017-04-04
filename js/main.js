@@ -141,7 +141,7 @@ function closeNav() {
 $(function() {
     var pageTitle = $("title").text();
     $(window).blur(function() {
-        $("title").text("I miss you! / " + pageTitle);
+        $("title").text("Hey, come back! / " + pageTitle);
     });
     $(window).focus(function() {
         $("title").text(pageTitle);
