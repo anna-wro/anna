@@ -1171,6 +1171,7 @@ body {
     height: 200px;
     z-index: -1;
     border-radius: 100px;
+    -webkit-transition: .5s ease-out;
     transition: .5s ease-out; }
 
 .project-psd:hover {
@@ -1196,16 +1197,19 @@ body {
     display: none; } }
 
 .cut-half {
-  -moz-columns: 2;
-       columns: 2; }
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2; }
   @media screen and (min-width: 480px) {
     .cut-half {
-      -moz-columns: 1;
-           columns: 1; } }
+      -webkit-columns: 1;
+         -moz-columns: 1;
+              columns: 1; } }
   @media screen and (min-width: 630px) {
     .cut-half {
-      -moz-columns: 2;
-           columns: 2; } }
+      -webkit-columns: 2;
+         -moz-columns: 2;
+              columns: 2; } }
 
 .cyan-link {
   position: relative;
@@ -1227,14 +1231,19 @@ header {
   min-height: calc(100vh - 9em);
   background-color: #e2e2e2;
   position: relative;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 5em; }
   .banner:before {
     content: "";
@@ -1393,6 +1402,7 @@ figure {
   font-weight: 300;
   letter-spacing: 1px;
   z-index: 1;
+  -webkit-transition: .6s;
   transition: .6s; }
   .button:hover {
     background-color: #00e3ff; }
@@ -1414,6 +1424,7 @@ figure {
     border-radius: 30px;
     border: 3px solid #FB37BF;
     z-index: -2;
+    -webkit-transition: .6s;
     transition: .6s; }
 
 .btn-submit {
@@ -1486,6 +1497,7 @@ a:hover svg {
       left: 0;
       display: block;
       background: #00e3ff;
+      -webkit-transition: .5s;
       transition: .5s; }
     #burger + label span:first-child {
       top: 2px; }
@@ -1498,12 +1510,14 @@ a:hover svg {
     top: 50%; }
   #burger:checked + label span:first-child {
     opacity: 1;
-    -ms-transform: rotate(405deg);
-        transform: rotate(405deg); }
+    -webkit-transform: rotate(405deg);
+        -ms-transform: rotate(405deg);
+            transform: rotate(405deg); }
   #burger:checked + label span:last-child {
     opacity: 1;
-    -ms-transform: rotate(-405deg);
-        transform: rotate(-405deg); }
+    -webkit-transform: rotate(-405deg);
+        -ms-transform: rotate(-405deg);
+            transform: rotate(-405deg); }
   #burger ~ nav {
     background: #f5f5f5;
     position: fixed;
@@ -1512,8 +1526,10 @@ a:hover svg {
     width: 100%;
     height: 58px;
     z-index: 3;
+    -webkit-transition: .5s;
     transition: .5s;
-    transition-delay: .5s;
+    -webkit-transition-delay: .5s;
+            transition-delay: .5s;
     overflow: hidden; }
     #burger ~ nav > ul {
       list-style-type: none;
@@ -1524,8 +1540,10 @@ a:hover svg {
       right: 20%; }
       #burger ~ nav > ul > li {
         opacity: 0;
+        -webkit-transition: .5s;
         transition: .5s;
-        transition-delay: 0s; }
+        -webkit-transition-delay: 0s;
+                transition-delay: 0s; }
         #burger ~ nav > ul > li > a {
           text-transform: uppercase;
           color: #3e06c2;
@@ -1536,10 +1554,12 @@ a:hover svg {
             color: #4d07eb; }
   #burger:checked ~ nav {
     height: 100%;
-    transition-delay: 0s; }
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s; }
     #burger:checked ~ nav > ul > li {
       opacity: 1;
-      transition-delay: .5s; } }
+      -webkit-transition-delay: .5s;
+              transition-delay: .5s; } }
 
 /***
 *
@@ -1574,6 +1594,7 @@ a:hover svg {
     height: 17px;
     background: #00e3ff;
     z-index: -1;
+    -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out; }
   a:hover span {
     width: 100%;
@@ -1589,8 +1610,9 @@ a:hover svg {
   position: fixed;
   top: 50%;
   right: 30px;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
   .dot_nav ul {
     list-style-type: none;
     margin: 0;
@@ -1607,6 +1629,7 @@ a:hover svg {
     color: #000;
     text-decoration: none; }
     .dot_nav .dot, .dot_nav .dot:hover {
+      -webkit-transition: all 200ms ease;
       transition: all 200ms ease; }
     .dot_nav .dot.active {
       background: #00e3ff; }
@@ -1623,6 +1646,7 @@ a:hover svg {
     opacity: 0;
     position: absolute;
     z-index: -100;
+    -webkit-transition: all 0.45s ease;
     transition: all 0.45s ease; }
   .tooltip:hover {
     color: #FB37BF; }
@@ -1633,6 +1657,7 @@ a:hover svg {
 .tooltip:focus::after {
   opacity: 1;
   z-index: 100;
+  -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease; }
 
 .tooltip::before {

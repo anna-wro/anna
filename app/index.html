@@ -8,11 +8,12 @@
     <meta name="author" content="Anna Wróbel">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="image/x-icon" rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700,700i" rel="stylesheet">
 
     <!--build:css css/app.min.css-->
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/application.css">
     <!--endbuild-->
+
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
@@ -170,6 +171,7 @@
             <p>Here you can see some of my projects that&nbsp;I'm happy to share.</p>
             <figure class="starnight">
                 <a href="http://anna.pm/starnight"> <img class="img-portfolio" src="img/starnight.png"
+                                                         srcset="img/starnight.png 1x, img/starnight-2x.png 2x"
                                                          alt="Starnight App"></a>
             </figure>
             <div class="project">
@@ -187,6 +189,7 @@
             </div>
             <figure class="flickr">
                 <a href="http://anna.pm/flickr"><img class="img-portfolio" src="img/flickr.png"
+                                                     srcset="img/flickr.png 1x, img/flickr-2x.png 2x"
                                                      alt="Flickr Photo Search"></a>
             </figure>
             <div class="project">
@@ -203,7 +206,8 @@
         </div>
         <div class="col__5-12 col__md-9-12__center col__sm-11-12__center">
             <figure class="todo">
-                <a href="http://anna.pm/todo"><img class="img-portfolio" src="img/todo.png" alt="To-do App"></a>
+                <a href="http://anna.pm/todo"><img class="img-portfolio" src="img/todo.png"
+                                                   srcset="img/todo.png 1x, img/todo-2x.png 2x" alt="To-do App"></a>
             </figure>
             <div class="project">
                 <h3>To-do App</h3>
@@ -217,6 +221,7 @@
             </div>
             <figure class="apollo">
                 <a href="http://anna.pm/apollo"> <img class="img-portfolio" src="img/apollo2.png"
+                                                      srcset="img/apollo2.png 1x, img/apollo2-2x.png 2x"
                                                       alt="Apollo PSD Template"></a>
             </figure>
             <div class="project">
@@ -258,7 +263,7 @@
         </ul>
     </nav>
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
 </script>

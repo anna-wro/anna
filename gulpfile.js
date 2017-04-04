@@ -34,7 +34,7 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
-            browsers: ['last 4 versions']
+            browsers: ['last 4 versions', '>1%']
         }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('app/css'))
@@ -72,9 +72,7 @@ gulp.task('useref', function() {
 gulp.task('images', function() {
     return gulp.src('app/img/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
-        .pipe(cache(imagemin({
-            interlaced: true
-        })))
+        .pipe(cache(imagemin({ progressive: true })))
         .pipe(gulp.dest('dist/img'))
 });
 

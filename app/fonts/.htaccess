@@ -1,0 +1,11 @@
+AddType application/vnd.ms-fontobject .eot
+AddType font/ttf .ttf
+AddType font/otf .otf
+AddType application/x-font-woff .woff
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType font/ttf      "access plus 3 months"
+  ExpiresByType font/woff     "access plus 3 months"
+    ExpiresByType application/x-font-woff     "access plus 3 months"
+</IfModule>
