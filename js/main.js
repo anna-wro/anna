@@ -135,3 +135,15 @@ $(function () {
 function closeNav() {
     jQuery("#burger").attr('checked', false);
 }
+
+// Change title when away
+
+$(function() {
+    var pageTitle = $("title").text();
+    $(window).blur(function() {
+        $("title").text("I miss you! / " + pageTitle);
+    });
+    $(window).focus(function() {
+        $("title").text(pageTitle);
+    });
+});

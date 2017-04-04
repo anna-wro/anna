@@ -1418,7 +1418,7 @@ body {
     font-size: 27px;
     margin-left: -7px; }
 @media screen and (min-width: 480px) {
-  .about-list br {
+  .about-list br:not(.line-date) {
     display: none; } }
 
 .cut-half {

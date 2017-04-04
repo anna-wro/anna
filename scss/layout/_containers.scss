@@ -65,12 +65,13 @@
             margin-left: -7px;
         }
     }
-    br {
+    br:not(.line-date) {
         @media screen and (min-width: 480px) {
             display: none;
         }
     }
 }
+
 
 .cut-half {
     columns: 2;
