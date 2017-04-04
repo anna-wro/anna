@@ -1,0 +1,21 @@
+.icons {
+    margin: 30px auto;
+}
+
+.icon {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    right: 14px;
+    margin-bottom: 30px;
+}
+
+a svg {
+    box-sizing: padding-box;
+    padding: 2px;
+    fill: $violet;
+}
+
+a:hover svg {
+    fill: darken($violet, 20%);
+}
