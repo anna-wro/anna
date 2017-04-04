@@ -181,7 +181,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -310,8 +309,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -424,6 +421,9 @@ p {
 
 img {
   max-width: 100%; }
+
+::-moz-selection {
+  background: #00e3ff; }
 
 ::selection {
   background: #00e3ff; }
@@ -1196,13 +1196,16 @@ body {
     display: none; } }
 
 .cut-half {
-  columns: 2; }
+  -moz-columns: 2;
+       columns: 2; }
   @media screen and (min-width: 480px) {
     .cut-half {
-      columns: 1; } }
+      -moz-columns: 1;
+           columns: 1; } }
   @media screen and (min-width: 630px) {
     .cut-half {
-      columns: 2; } }
+      -moz-columns: 2;
+           columns: 2; } }
 
 .cyan-link {
   position: relative;
@@ -1224,10 +1227,14 @@ header {
   min-height: calc(100vh - 9em);
   background-color: #e2e2e2;
   position: relative;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   margin-bottom: 5em; }
   .banner:before {
     content: "";
@@ -1491,10 +1498,12 @@ a:hover svg {
     top: 50%; }
   #burger:checked + label span:first-child {
     opacity: 1;
-    transform: rotate(405deg); }
+    -ms-transform: rotate(405deg);
+        transform: rotate(405deg); }
   #burger:checked + label span:last-child {
     opacity: 1;
-    transform: rotate(-405deg); }
+    -ms-transform: rotate(-405deg);
+        transform: rotate(-405deg); }
   #burger ~ nav {
     background: #f5f5f5;
     position: fixed;
@@ -1580,7 +1589,8 @@ a:hover svg {
   position: fixed;
   top: 50%;
   right: 30px;
-  transform: translateY(-50%); }
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
   .dot_nav ul {
     list-style-type: none;
     margin: 0;
@@ -1650,3 +1660,5 @@ a:hover svg {
     font-size: .75em;
     margin-left: -5em;
     width: 10em; } }
+
+/*# sourceMappingURL=application.css.map */
