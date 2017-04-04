@@ -1,0 +1,22 @@
+// ==========================================================================
+// Helpers
+// ==========================================================================
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .target::before {
+    content:"";
+    display:block;
+    height:70px;
+    margin:-70px 0 0;
+  }
+}

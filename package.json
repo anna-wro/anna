@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "![Portfolio](https://github.com/anna-wro/portfolio/blob/master/img/portfolio.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anna-wro/portfolio.git"
+  },
+  "author": "Anna Wróbel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anna-wro/portfolio/issues"
+  },
+  "homepage": "https://github.com/anna-wro/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
