@@ -1,11 +1,13 @@
 #contact {
     margin: 1.5em auto 2em;
-    padding: 3em 4em 8em;
+    padding: 3em 1em 8em;
     background-color: $gray-1;
     text-align: center;
     position: relative;
 
     @media screen and (min-width: 480px){
+        padding: 3em 4em 8em;
+
         &:after {
             content: "";
             width: 200px;
