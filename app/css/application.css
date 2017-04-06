@@ -1268,20 +1268,22 @@ header {
 
 #contact {
   margin: 1.5em auto 2em;
-  padding: 3em 4em 8em;
+  padding: 3em 1em 8em;
   background-color: #e2e2e2;
   text-align: center;
   position: relative; }
   @media screen and (min-width: 480px) {
-    #contact:after {
-      content: "";
-      width: 200px;
-      height: 150px;
-      position: absolute;
-      right: -32px;
-      bottom: -32px;
-      border: 14px solid #00e3ff;
-      z-index: -1; } }
+    #contact {
+      padding: 3em 4em 8em; }
+      #contact:after {
+        content: "";
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        right: -32px;
+        bottom: -32px;
+        border: 14px solid #00e3ff;
+        z-index: -1; } }
 
 form {
   max-width: 600px;
@@ -1326,6 +1328,18 @@ textarea {
   border: none;
   color: #E53935;
   border-bottom: 8px solid #E53935; }
+
+.copy {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #a2a2a2; }
+  .copy::-moz-selection {
+    color: #34495e; }
+  .copy::selection {
+    color: #34495e; }
+  @media screen and (max-width: 480px) {
+    .copy {
+      text-align: center; } }
 
 #portfolio {
   margin-top: 0;

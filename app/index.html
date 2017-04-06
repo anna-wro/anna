@@ -8,9 +8,8 @@
     <meta name="author" content="Anna Wróbel">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="image/x-icon" rel="icon" href="favicon.ico">
-
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700,700i" rel="stylesheet">
     <!--build:css css/app.min.css-->
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/application.css">
     <!--endbuild-->
 
@@ -19,7 +18,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body id ="top">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" fill-rule="evenodd" clip-rule="evenodd"
      stroke-linejoin="round" stroke-miterlimit="1.41421">
     <symbol id="mail" viewbox="0 0 300 300">
@@ -72,7 +71,7 @@
             <!-- /banner -->
         </div>
         <div id="about" class="target">
-            <div class="col__10-12__center col__md-10-12__center col__sm-10-12__center">
+            <div class="col__10-12__center col__md-10-12__center col__sm-12-12__center">
                 <div class="about-links">
                     <div class="about-img"><img src="img/me.png" class="me" alt=""></div>
                     <a href="mailto:hello@anna.pm">
@@ -122,7 +121,7 @@
         </div>
     </div>
     <div class="row target" id="skills">
-        <div class="offset__1-12 col__10-12">
+        <div class="col__sm-12-12__center  col__10-12__center">
             <p><strong>Communication</strong></p>
             <ul class="about-list">
                 <li>Polish - mother tongue</li>
@@ -130,7 +129,7 @@
                 <li>Polish Sign Language - elementary</li>
             </ul>
         </div>
-        <div class="offset__1-12 offset__md-1-12  col__sm-10-12__center col__md-5-12">
+        <div class="offset__1-12 offset__md-1-12  col__sm-12-12__center col__md-5-12">
             <p><strong>Development</strong></p>
             <ul class="about-list cut-half">
                 <li>HTML5</li>
@@ -142,7 +141,7 @@
                 <li>Git</li>
             </ul>
         </div>
-        <div class="offset__sm-1-12 col__md-5-12">
+        <div class="col__sm-12-12__center col__md-5-12">
             <p class="design"><strong>Design</strong></p>
             <ul class="about-list">
                 <li>Affinity Photo<span class="tooltip"
@@ -152,7 +151,7 @@
                 <li>Affinity Designer <br/>/ Adobe Illustrator</li>
             </ul>
         </div>
-        <div class="offset__1-12 col__10-12">
+        <div class="col__sm-12-12__center  col__10-12__center">
             <p><strong>Scholarships</strong></p>
             <ul class="about-list">
                 <li>Google EU Scholarship - Android Development for Beginners <br class="line-date"/>January 12 - April
@@ -160,7 +159,7 @@
                 </li>
             </ul>
         </div>
-        <div class="offset__1-12 col__10-12">
+        <div class="col__sm-12-12__center  col__10-12__center">
             <p>To get a better sense of what I'm capable of, please take a look at my projects below.</p>
         </div>
     </div>
@@ -253,6 +252,13 @@
             </form>
         </div>
     </div>
+    <footer>
+        <div class="row">
+            <div class="col__sm-12-12__center col__7-12__center">
+                <p class="copy">Anna Wróbel, 2017</p>
+            </div>
+        </div>
+    </footer>
     <!-- /contact -->
     <nav class="dot_nav">
         <ul>
@@ -268,6 +274,7 @@
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
 </script>
 <!--build:js js/main.min.js -->
+<script src="js/scrolling.js"></script>
 <script src="js/main.js"></script>
 <!-- endbuild -->
 
