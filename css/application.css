@@ -1178,6 +1178,7 @@ body {
   color: #FB37BF; }
 
 .about-list li {
+  list-style-position: inside;
   position: relative;
   display: block;
   font-size: 1.25em;
@@ -1197,6 +1198,9 @@ body {
     display: none; } }
 
 .cut-half {
+  -webkit-perspective: 1;
+  position: relative;
+  left: -20px;
   -webkit-columns: 2;
      -moz-columns: 2;
           columns: 2; }
@@ -1210,6 +1214,8 @@ body {
       -webkit-columns: 2;
          -moz-columns: 2;
               columns: 2; } }
+  .cut-half li {
+    margin-left: 20px; }
 
 .cyan-link {
   position: relative;

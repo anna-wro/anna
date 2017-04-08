@@ -50,6 +50,7 @@
 
 .about-list {
     li {
+        list-style-position: inside;
         position: relative;
         display: block;
         font-size: 1.25em;
@@ -72,14 +73,19 @@
     }
 }
 
-
 .cut-half {
+    -webkit-perspective:1;
+    position: relative;
+    left: -20px;
     columns: 2;
     @media screen and (min-width: 480px) {
         columns: 1;
     }
     @media screen and (min-width: 630px) {
         columns: 2;
+    }
+    li {
+        margin-left: 20px;
     }
 }
 
@@ -93,4 +99,3 @@
     }
     margin-bottom: 1em;
 }
-
