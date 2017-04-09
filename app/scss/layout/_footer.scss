@@ -1,0 +1,13 @@
+
+.copy {
+  text-transform: uppercase;
+  font-size: em(16px);
+  color: darken($gray-1, 25%);
+  &::selection {
+    color: $gray-3;
+  }
+
+  @media screen and (max-width: 480px){
+    text-align:center;
+  }
+}
