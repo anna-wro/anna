@@ -1225,6 +1225,9 @@ body {
   .cut-half li {
     margin-left: 20px; }
 
+.scholarship {
+  padding-top: 10px; }
+
 .cyan-link {
   position: relative;
   display: inline-block;
