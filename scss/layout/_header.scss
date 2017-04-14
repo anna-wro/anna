@@ -9,6 +9,7 @@ header {
 }
 
 .banner {
+    min-height: 400px; // fallback for vh
     min-height: calc(100vh - 9em);
     background-color: $gray-1;
     position: relative;
