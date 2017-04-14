@@ -1245,6 +1245,7 @@ header {
   position: relative; }
 
 .banner {
+  min-height: 400px;
   min-height: calc(100vh - 9em);
   background-color: #e2e2e2;
   position: relative;
