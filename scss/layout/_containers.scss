@@ -1,6 +1,7 @@
 /* ==========================================================================
-   Header
+   Containers
    ========================================================================== */
+@import '../helpers/index';
 
 #about img {
   max-width: 200px;
@@ -9,38 +10,40 @@
 }
 
 .about-links {
-  margin-left: 10%;
   float: right;
+  margin-left: 10%;
 }
 
 @media screen and (max-width: 550px) {
   .about-links + p {
     clear: both;
-    width: 100%;
     display: block;
+    width: 100%;
   }
 }
 
 .about-img {
   margin-bottom: 40px;
   position: relative;
+
   &:hover {
-    &:before {
+    &::before {
       border: 14px solid $violet;
     }
   }
-  &:before {
-    box-sizing: border-box;
-    content: "";
-    position: absolute;
-    bottom: -9px;
-    right: 8px;
+
+  &::before {
     border: 14px solid $cyan;
-    width: 200px;
-    height: 200px;
-    z-index: -1;
     border-radius: 100px;
+    bottom: -9px;
+    box-sizing: border-box;
+    content: '';
+    height: 200px;
+    position: absolute;
+    right: 8px;
     transition: .5s ease-out;
+    width: 200px;
+    z-index: -1;
   }
 }
 
@@ -50,34 +53,52 @@
 
 .about-list {
   li {
-    position: relative;
     display: block;
     font-size: 1.25em;
     font-weight: $font-weight-medium;
     line-height: 1.3;
+    position: relative;
   }
 }
 
 .about-list:not(.cut-half) {
-  li:before {
+  li::before {
     color: $violet;
-    content: "\2022";
+    content: '\2022';
+    font-size: 27px;
+    left: -10px;
+    margin-left: -7px;
     position: absolute;
     top: -6px;
-    left: -10px;
-    font-size: 27px;
-    margin-left: -7px;
   }
 }
 
-.cut-half li:before {
-  color: $violet;
-  content: "\2022";
-  position: absolute;
-  bottom: -4px;
-  left: -10px;
-  font-size: 27px;
-  margin-left: -7px;
+.cut-half {
+  columns: 2;
+  left: -20px;
+  position: relative;
+
+  @media screen and (min-width: 480px) {
+    columns: 1;
+  }
+
+  @media screen and (min-width: 630px) {
+    columns: 2;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  li::before {
+    bottom: -4px;
+    color: $violet;
+    content: '\2022';
+    font-size: 27px;
+    left: -10px;
+    margin-left: -7px;
+    position: absolute;
+  }
 }
 
 br:not(.line-date) {
@@ -86,33 +107,7 @@ br:not(.line-date) {
   }
 }
 
-.cut-half {
-  position: relative;
-  left: -20px;
-  columns: 2;
-  @media screen and (min-width: 480px) {
-    columns: 1;
-  }
-  @media screen and (min-width: 630px) {
-    columns: 2;
-  }
-  li {
-    margin-left: 20px;
-
-  }
-}
-
 .scholarship {
   padding-top: 10px;
 }
 
-.cyan-link {
-  position: relative;
-  display: inline-block;
-  padding: 0 3px;
-  font-weight: bold;
-  & span {
-    top: 7px;
-  }
-  margin-bottom: 1em;
-}

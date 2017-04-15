@@ -1,43 +1,46 @@
 /* ==========================================================================
    Header
    ========================================================================== */
+@import '../helpers/index';
 
 header {
-    padding: 1em 0 .25em;
-    position: relative;
-    @extend %clearfix;
+  @extend %clearfix;
+  padding: 1em 0 .25em;
+  position: relative;
 }
 
 .banner {
-    min-height: 400px; // fallback for vh
-    min-height: calc(100vh - 9em);
-    background-color: $gray-1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5em;
-    &:before {
-        content: "";
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: -28px;
-        left: -28px;
-        border: 14px solid $cyan;
-        z-index: -1;
-    }
+  align-items: center;
+  background-color: $gray-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5em;
+  min-height: 400px; // fallback for vh
+  min-height: calc(100vh - 9em);
+  position: relative;
+
+  &::before {
+    border: 14px solid $cyan;
+    content: '';
+    height: 100px;
+    left: -28px;
+    position: absolute;
+    top: -28px;
+    width: 100px;
+    z-index: -1;
+  }
 }
 
 .headline {
-    font-family: $font-family-primary;
-    text-transform: uppercase;
-    color: lighten($violet, 5%);
-    font-size: em(48px);
-    margin: 0 auto .75em;
-    text-align: center;
-    @media screen and (min-width: 480px) {
-        font-size: em(76px);
-    }
+  color: lighten($violet, 5%);
+  font-family: $font-family-primary;
+  font-size: em(48px);
+  margin: 0 auto .75em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 480px) {
+    font-size: em(76px);
+  }
 }

@@ -1,73 +1,79 @@
+/* ==========================================================================
+   Contact form
+   ========================================================================== */
+@import '../helpers/index';
+
 #contact {
-    margin: 1.5em auto 2em;
-    padding: 3em 1em 8em;
-    background-color: $gray-1;
-    text-align: center;
-    position: relative;
+  background-color: $gray-1;
+  margin: 1.5em auto 2em;
+  padding: 3em 1em 8em;
+  position: relative;
+  text-align: center;
 
-    @media screen and (min-width: 480px){
-        padding: 3em 4em 8em;
+  @media screen and (min-width: 480px) {
+    padding: 3em 4em 8em;
 
-        &:after {
-            content: "";
-            width: 200px;
-            height: 150px;
-            position: absolute;
-            right: -32px;
-            bottom: -32px;
-            border: 14px solid $cyan;
-            z-index: -1;
-        }
+    &::after {
+      border: 14px solid $cyan;
+      bottom: -32px;
+      content: '';
+      height: 150px;
+      position: absolute;
+      right: -32px;
+      width: 200px;
+      z-index: -1;
     }
+  }
 }
 
 form {
-    max-width: 600px;
-    font-size: 1.125em;
+  font-size: 1.125em;
+  max-width: 600px;
 }
 
 input:invalid {
-    box-shadow: none;
-    border: none;
-    border-bottom: 8px solid $pink;
+  border: 0;
+  border-bottom: 8px solid $pink;
+  box-shadow: none;
 }
 
 textarea,
 input {
-    width: 100%;
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    border: none;
-    border-bottom: 8px solid $gray;
-    background-color: $gray;
-    &:focus {
-        border-bottom: 8px solid $violet;
-        outline: none;
-    }
+  background-color: $gray;
+  border: 0;
+  border-bottom: 8px solid $gray;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 100%;
+
+  &:focus {
+    border-bottom: 8px solid $violet;
+    outline: none;
+  }
 }
 
 textarea {
-    resize: vertical;
-    min-height: 150px;
-    max-height: 300px;
+  max-height: 300px;
+  min-height: 150px;
+  resize: vertical;
 }
 
 #form-messages {
-    padding: .5em 1em .75em 1em;
-    margin-bottom: 0.75rem;
-    border-radius: 2px;
-    font-size: 1.23em;
+  border-radius: 2px;
+  font-size: 1.23em;
+  margin-bottom: .75rem;
+  padding: .5em 1em .75em;
 }
 
 .success {
-    border: none;
-    color: $violet;
-    border-bottom: 8px solid $violet;
+  border: 0;
+  border-bottom: 8px solid $violet;
+  color: $violet;
 }
 
 .error {
-    border: none;
-    color: #E53935;
-    border-bottom: 8px solid #E53935;
+  border: 0;
+  border-bottom: 8px solid $red;
+  color: $red;
 }
