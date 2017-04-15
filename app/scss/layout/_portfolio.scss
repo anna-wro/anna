@@ -1,11 +1,14 @@
-/* ==========================================================================
-   Portfolio
-   ========================================================================== */
+// Portfolio
 @import '../helpers/index';
 
-#portfolio {
+.portfolio {
   margin-top: 0;
   padding-top: 3em;
+
+  + p {
+    font-weight: 300;
+    margin-top: 50px;
+  }
 }
 
 .project {
@@ -16,7 +19,7 @@
   box-shadow: 7px 10px 20px $gray-shadow;
 }
 
-.used li {
+.project-used li {
   color: $gray-2;
   display: block;
   font-size: 1.125em;
@@ -24,19 +27,6 @@
 
   @media screen and (min-width: 480px) {
     padding-left: 3em;
-  }
-}
-
-hr {
-  border: 0 solid $gray-1;
-  border-top: 3px solid $gray-1;
-  float: left;
-  position: relative;
-  top: 18px;
-  width: 2em;
-
-  @media screen and (min-width: 480px) {
-    width: 4em;
   }
 }
 
@@ -71,9 +61,4 @@ figure {
   right: -23px;
   width: 100px;
   z-index: -1;
-}
-
-#portfolio + p {
-  font-weight: 300;
-  margin-top: 50px;
 }

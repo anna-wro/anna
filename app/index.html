@@ -46,18 +46,18 @@
         <div class="col__12-12">
             <header>
                 <div class="burger-container">
-                    <input id="burger" type="checkbox"/>
-                    <label for="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <input id="burger" class="burger" type="checkbox"/>
+                    <label for="burger" class="burger-label">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
                     </label>
-                    <nav class="top_nav">
-                        <ul>
-                            <li><a href="#about">About me<span></span></a></li>
-                            <li><a href="#skills">Skills<span></span></a></li>
-                            <li><a href="#projects">Projects<span></span></a></li>
-                            <li><a href="#contact">Contact<span></span></a></li>
+                    <nav class="top-nav">
+                        <ul class="top-list">
+                            <li class="top-list-item"><a href="#about">About me<span></span></a></li>
+                            <li class="top-list-item"><a href="#skills">Skills<span></span></a></li>
+                            <li class="top-list-item"><a href="#projects">Projects<span></span></a></li>
+                            <li class="top-list-item"><a href="#contact">Contact<span></span></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -169,7 +169,7 @@
         </div>
     </section>
     <!-- /about -->
-    <section class="row target" id="projects">
+    <section class="row target portfolio" id="projects">
         <div class="offset__1-12 col__5-12 col__md-9-12__center col__sm-11-12__center">
             <h2>portfolio</h2>
             <p>Here you can see some of my projects that&nbsp;I'm happy to share.</p>
@@ -180,8 +180,8 @@
             </figure>
             <div class="project">
                 <h3>Starnight</h3>
-                <hr class="line">
-                <ul class="used">
+                <hr class="project-line">
+                <ul class="project-used">
                     <li>PSD<a href="https://dribbble.com/shots/1538281-Starnight-Free-PSD" class="project-psd">*</a> to
                         HTML
                     </li>
@@ -198,8 +198,8 @@
             </figure>
             <div class="project">
                 <h3>Flickr Photo Search</h3>
-                <hr class="line">
-                <ul class="used">
+                <hr class="project-line">
+                <ul class="project-used">
                     <li>Flickr API</li>
                     <li>JavaScript (jQuery)</li>
                     <li>AJAX</li>
@@ -215,8 +215,8 @@
             </figure>
             <div class="project">
                 <h3>To-do App</h3>
-                <hr class="line">
-                <ul class="used">
+                <hr class="project-line">
+                <ul class="project-used">
                     <li>HTML &amp; CSS</li>
                     <li>JavaScript</li>
                     <li>Local storage</li>
@@ -230,8 +230,8 @@
             </figure>
             <div class="project">
                 <h3>Apollo</h3>
-                <hr class="line">
-                <ul class="used">
+                <hr class="project-line">
+                <ul class="project-used">
                     <li>PSD<a href="https://symu.co/freebies/templates-4/apollo-psd-template/" class="project-psd">*</a>
                         to HTML
                     </li>
@@ -245,9 +245,9 @@
     </section>
     <!-- /portfolio -->
     <section class="row">
-        <div class="col__7-12__center col__sm-12-12 col__md-10-12__center  col__lg-7-12__center target" id="contact">
+        <div class="col__7-12__center col__sm-12-12 col__md-10-12__center  col__lg-7-12__center target contact-form" id="contact">
             <h2>get in touch</h2>
-            <div id="form-messages"></div>
+            <div id="form-messages" class="message"></div>
             <form id="ajax-contact" method="post" action="mailer.php">
                 <div id="result"></div>
                 <input type="text" id="name" name="name" placeholder="What's your name?">
@@ -265,8 +265,8 @@
         </div>
     </footer>
     <!-- /contact -->
-    <nav class="dot_nav">
-        <ul>
+    <nav class="dot-nav">
+        <ul class="dot-list">
             <li><a class="dot" href="#about"><span>About</span></a></li>
             <li><a class="dot" href="#skills"><span>Skills</span></a></li>
             <li><a class="dot" href="#projects"><span>Projects</span></a></li>

@@ -1,21 +1,24 @@
+// Icons
+@import '../helpers/index';
+
 .icons {
-    margin: 30px auto;
+  margin: 30px auto;
 }
 
 .icon {
-    width: 34px;
-    height: 34px;
-    position: relative;
-    right: 14px;
-    margin-bottom: 30px;
+  height: 34px;
+  margin-bottom: 30px;
+  position: relative;
+  right: 14px;
+  width: 34px;
 }
 
 a svg {
-    box-sizing: padding-box;
-    padding: 2px;
-    fill: $violet;
+  box-sizing: padding-box;
+  fill: $violet;
+  padding: 2px;
 }
 
 a:hover svg {
-    fill: darken($violet, 20%);
+  fill: darken($violet, 20%);
 }

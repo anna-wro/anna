@@ -1,9 +1,7 @@
-/* ==========================================================================
-   Contact form
-   ========================================================================== */
+// Contact form
 @import '../helpers/index';
 
-#contact {
+.contact-form {
   background-color: $gray-1;
   margin: 1.5em auto 2em;
   padding: 3em 1em 8em;
@@ -59,7 +57,7 @@ textarea {
   resize: vertical;
 }
 
-#form-messages {
+.message {
   border-radius: 2px;
   font-size: 1.23em;
   margin-bottom: .75rem;
