@@ -1,22 +1,24 @@
-// ==========================================================================
-// Helpers
-// ==========================================================================
+/* ==========================================================================
+   Helpers
+   ========================================================================== */
 
 // Clearfix
 
 %clearfix {
-  &:after {
-    content: "";
-    display: table;
+  &::after {
     clear: both;
+    content: '';
+    display: table;
   }
 }
 
+// Anchor offset on mobile devices
+
 @media screen and (max-width: 768px) {
   .target::before {
-    content:"";
-    display:block;
-    height:70px;
-    margin:-70px 0 0;
+    content: '';
+    display: block;
+    height: 70px;
+    margin: -70px 0 0;
   }
 }
