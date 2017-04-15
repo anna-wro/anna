@@ -64,7 +64,7 @@ $('figure').hover(function () {
  */
 
 $(function () {
-  $('.top_nav').find('a').on('click', closeNav)
+  $('.top-nav').find('a').on('click', closeNav)
 })
 
 function closeNav () {

@@ -25,12 +25,12 @@ $(document).ready(function () {
   $(document).on('scroll', onScroll)
 
     // smooth scroll
-  $('.dot_nav a').on('click', function (e) {
+  $('.dot-nav a').on('click', function (e) {
     e.preventDefault()
     $(document).off('scroll')
     console.log('click')
 
-    $('.dot_nav a').each(function () {
+    $('.dot-nav a').each(function () {
       $(this).removeClass('active')
     })
     $(this).addClass('active')
@@ -47,20 +47,20 @@ $(document).ready(function () {
 
 function onScroll () {
   var scrollPos = $(document).scrollTop()
-  $('.dot_nav a').each(function () {
+  $('.dot-nav a').each(function () {
     var currLink = $(this)
     var refElement = $(currLink.attr('href'))
     var top = refElement.position().top - 100
     if (top <= scrollPos && top + refElement.height() > scrollPos) {
-      $('.dot_nav a').removeClass('active')
+      $('.dot-nav a').removeClass('active')
       currLink.addClass('active')
     } else {
       currLink.removeClass('active')
     }
   })
   if ($('.active')[ 0 ]) {
-    $('.dot_nav').css('visibility', 'visible')
+    $('.dot-nav').css('visibility', 'visible')
   } else {
-    $('.dot_nav').css('visibility', 'hidden')
+    $('.dot-nav').css('visibility', 'hidden')
   }
 }

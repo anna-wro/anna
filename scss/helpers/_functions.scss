@@ -1,8 +1,6 @@
-/* ==========================================================================
-   Functions
-   ========================================================================== */
+// Functions
 
 // Calculate em values
 @function em($target, $context: $base-font-size) {
-  @return ($target/$context) * 1em;
+  @return ($target / $context) * 1em;
 }
