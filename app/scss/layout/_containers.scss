@@ -45,7 +45,8 @@
   }
 }
 
-.project-psd:hover {
+.project-psd:hover,
+.project-psd:focus {
   color: $pink;
 }
 

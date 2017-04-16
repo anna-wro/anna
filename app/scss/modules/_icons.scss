@@ -19,6 +19,7 @@ a svg {
   padding: 2px;
 }
 
-a:hover svg {
+a:hover svg,
+a:focus svg {
   fill: darken($violet, 20%);
 }

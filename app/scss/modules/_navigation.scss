@@ -118,7 +118,8 @@
       padding: 20px;
       text-transform: uppercase;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: $electric-violet;
       }
     }
@@ -177,7 +178,8 @@
     z-index: -1;
   }
 
-  a:hover span {
+  a:hover span,
+  a:focus span {
     max-width: 100%;
     width: 100%;
   }
