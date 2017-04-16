@@ -16,7 +16,8 @@
   transition: .6s;
   z-index: 1;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $cyan;
 
     a {
@@ -48,6 +49,18 @@
   }
 }
 
+.focused-button {
+  background-color: $cyan;
+
+  a {
+    color: $violet;
+  }
+
+  &::before {
+    border: 3px solid $cyan;
+  }
+}
+
 .btn-submit {
   border: 0;
   color: $gray;
@@ -55,7 +68,8 @@
   padding: 10px 20px 10px 22px;
   width: 100%;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $violet;
   }
 }

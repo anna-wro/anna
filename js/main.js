@@ -52,7 +52,7 @@ $(function () {
 })
 
 /*
- * Projects - effect on hover
+ * Projects - effect on hover and focus
  */
 
 $('figure').hover(function () {
@@ -84,3 +84,29 @@ $(function () {
     $('title').text(pageTitle)
   })
 })
+
+/*
+ * Accessibility
+ */
+
+$('.button-link').on('focus blur', toggleFocus);
+function toggleFocus(e){
+  if( e.type === 'focusin'){
+    $(this).parent().toggleClass('focused-button')
+  }
+  else {
+    $(this).parent().toggleClass('focused-button')
+  }
+}
+
+$('figure a').on('focus blur', toggleFocusPortfolio);
+function toggleFocusPortfolio(e){
+  if( e.type === 'focusin'){
+    $(this).parent().next('div').children('hr').toggleClass('violet');
+    $(this).children('img').toggleClass('shadow');
+  }
+  else {
+    $(this).parent().next('div').children('hr').toggleClass('violet')
+    $(this).children('img').toggleClass('shadow');
+  }
+}
