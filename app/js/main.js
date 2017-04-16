@@ -52,7 +52,7 @@ $(function () {
 })
 
 /*
- * Projects - effect on hover and focus
+ * Projects - effect on hover
  */
 
 $('figure').hover(function () {
@@ -86,7 +86,7 @@ $(function () {
 })
 
 /*
- * Accessibility
+ * Accessibility - effect on focus
  */
 
 $('.button-link').on('focus blur', toggleFocus);
