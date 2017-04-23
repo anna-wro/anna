@@ -1244,6 +1244,9 @@ header::after {
   position: absolute;
   top: -6px; }
 
+.scholarship-list {
+  padding-bottom: 10px; }
+
 .cut-half {
   -webkit-columns: 2;
      -moz-columns: 2;
