@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "![Portfolio](https://github.com/anna-wro/portfolio/blob/master/img/portfolio.png)",
   "main": "index.js",
   "scripts": {
