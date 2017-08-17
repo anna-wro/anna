@@ -22,7 +22,7 @@
         $recipient = "hello@anna.pm";
 
         // Set the email subject.
-        $subject = "Anna.pm - Contact form";
+        $subject = "Anna.pm - contact form";
 
         // Build the email content.
         $email_content = "Name: $name\n";
