@@ -114,7 +114,6 @@
     > a {
       color: $violet;
       display: block;
-      font-weight: 600;
       padding: 20px;
       text-transform: uppercase;
 
@@ -158,7 +157,7 @@
 
   .top-list-item {
     display: block;
-    font-weight: $font-weight-bold;
+    font-weight: 400;
     list-style-type: none;
     padding-left: 0;
 
